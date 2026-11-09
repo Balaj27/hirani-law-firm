@@ -95,6 +95,11 @@ select:focus-visible,
   color: #fff;
   border-bottom-color: #ffffff40;
 }
+.site-header.is-transparent.has-solid-cta .header-cta {
+  background: #fff;
+  color: #302f20;
+  border-color: #fff;
+}
 .header-inner {
   max-width: 1440px;
   margin: auto;

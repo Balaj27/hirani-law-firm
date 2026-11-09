@@ -162,6 +162,75 @@
     Georgia,
     serif;
 }
+
+.centered {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  min-height: clamp(560px, 91svh, 960px);
+  padding: 160px clamp(24px, 5vw, 80px) 80px;
+  overflow: hidden;
+}
+.centered .inner {
+  display: block;
+  width: 100%;
+  min-height: 0;
+}
+.centered .copy {
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+  margin-inline: auto;
+  text-align: center;
+}
+.centered .eyebrow {
+  margin: 0 0 22px;
+  color: #eeede7;
+  font-size: clamp(15px, 1.1vw, 20px);
+}
+.centered h1 {
+  max-width: 8em;
+  margin-inline: auto;
+  font-size: clamp(62px, 6.4vw, 120px);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+.centered .media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.centered .media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #080a0666, #080a0633), #080a0633;
+}
+.centered .media img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center 30%;
+}
+@media (max-width: 809px) {
+  .centered {
+    min-height: clamp(500px, 82svh, 760px);
+    padding: 130px 24px 70px;
+  }
+  .centered h1 {
+    font-size: clamp(48px, 11vw, 76px);
+  }
+  .centered .eyebrow {
+    max-width: 300px;
+    margin-inline: auto;
+    line-height: 1.5;
+  }
+  .centered .media::after {
+    background: #080a0673;
+  }
+}
 .home .note {
   color: #e2e2dc;
   margin-top: 32px;

@@ -29,7 +29,7 @@ export default function Page() {
           className="framer-h55NI framer-oG8KX framer-tPU9M framer-Uv5iO framer-CZYhM framer-FcSz8 framer-ut7t9c"
           style={{ minHeight: "100vh", width: "auto", display: "contents" }}
         >
-          <SiteHeader transparent={false} />
+          <SiteHeader transparent solidCta />
           <main className="framer-12hox6l" data-framer-name="Main">
             <HeroHeader1 />
             <FounderText2 />

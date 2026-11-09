@@ -9,6 +9,7 @@ type Props = {
   eyebrow?: string;
   description?: string;
   home?: boolean;
+  centered?: boolean;
 };
 export function ImageHero({
   title,
@@ -17,9 +18,13 @@ export function ImageHero({
   eyebrow = "Hirani Law Firm · Houston & Katy, Texas",
   description,
   home = false,
+  centered = false,
 }: Props) {
   return (
-    <section className={`${styles.hero} ${home ? styles.home : ""}`} id="hero">
+    <section
+      className={`${styles.hero} ${home ? styles.home : ""} ${centered ? styles.centered : ""}`}
+      id="hero"
+    >
       <div className={styles.inner}>
         <div className={styles.copy}>
           {!home && <p className={styles.eyebrow}>{eyebrow}</p>}
@@ -50,7 +55,7 @@ export function ImageHero({
         </div>
         <div
           className={styles.media}
-          data-scroll-image={home ? undefined : "32"}
+          data-scroll-image={home || centered ? undefined : "32"}
         >
           <img src={image} alt={alt} fetchPriority="high" decoding="async" />
         </div>

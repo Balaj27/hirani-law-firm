@@ -12,7 +12,13 @@ const links = [
   ["Blog", "/blog"],
   ["Contact", "/contact"],
 ];
-export function SiteHeader({ transparent = false }: { transparent?: boolean }) {
+export function SiteHeader({
+  transparent = false,
+  solidCta = false,
+}: {
+  transparent?: boolean;
+  solidCta?: boolean;
+}) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
@@ -35,7 +41,7 @@ export function SiteHeader({ transparent = false }: { transparent?: boolean }) {
   }, [open]);
   return (
     <header
-      className={`site-header ${transparent && !scrolled && !open ? "is-transparent" : ""}`}
+      className={`site-header ${transparent && !scrolled && !open ? "is-transparent" : ""} ${solidCta ? "has-solid-cta" : ""}`}
     >
       <div className="header-inner">
         <Link href="/" className="wordmark" aria-label="Hirani Law Firm home">

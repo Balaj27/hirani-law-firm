@@ -1,2 +1,12 @@
 import { ImageHero } from "@/components/shared/image-hero";
-export function HeroHeader1(){return <ImageHero title="Family Law & Personal Injury" image="/assets/hirani-team-office.webp" alt="The Hirani Law Firm team" eyebrow="Our practice areas" description="Legal help for families across Greater Houston and injury victims throughout Texas."/>;}
+export function HeroHeader1() {
+  return (
+    <ImageHero
+      centered
+      title="Trusted Legal Expertise"
+      image="/assets/hirani-consultation.webp"
+      alt="Sehar Hirani and Noraly Martinez reviewing a client matter"
+      eyebrow="Legal expertise shaped around your needs."
+    />
+  );
+}

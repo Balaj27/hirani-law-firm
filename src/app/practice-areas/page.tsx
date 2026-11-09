@@ -22,7 +22,7 @@ export default function Page() {
           className="framer-77aT7 framer-BFFtf framer-oG8KX framer-CZYhM framer-Uv5iO framer-tPU9M framer-oooBw framer-FcSz8 framer-1c8x0f8"
           style={{ minHeight: "100vh", width: "auto", display: "contents" }}
         >
-          <SiteHeader transparent={false} />
+          <SiteHeader transparent solidCta />
           <main className="framer-16j5ctn" data-framer-name="Main">
             <HeroHeader1 />
             <PracticeAreas2 />
