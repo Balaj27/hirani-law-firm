@@ -1,0 +1,24 @@
+{
+  "license": "https://www.pexels.com/license/",
+  "usage": "Illustrative stock photography in the homepage personal injury benefits section; not Hirani clients, staff, or case results.",
+  "photos": [
+    {
+      "id": "11985980",
+      "file": "injury-accident-pexels.webp",
+      "photographer": "Mike Bird",
+      "page": "https://www.pexels.com/photo/car-crash-on-dirt-road-11985980/"
+    },
+    {
+      "id": "11870397",
+      "file": "injury-texas-highway-pexels.webp",
+      "photographer": "Christopher Hyer",
+      "page": "https://www.pexels.com/photo/aerial-view-of-the-highway-11870397/"
+    },
+    {
+      "id": "6077447",
+      "file": "injury-legal-preparation-pexels.webp",
+      "photographer": "KATRIN BOLOVTSOVA",
+      "page": "https://www.pexels.com/photo/judge-signing-on-the-papers-6077447/"
+    }
+  ]
+}

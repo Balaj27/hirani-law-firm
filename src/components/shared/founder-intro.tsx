@@ -44,8 +44,8 @@ export function FounderIntro() {
           data-scroll-image="38"
           src="/assets/hirani-sehar-standing.webp"
           alt="Sehar Hirani, Managing Attorney"
-          width="800"
-          height="1000"
+          width="732"
+          height="1024"
           loading="lazy"
         />
       </div>

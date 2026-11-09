@@ -21,7 +21,7 @@ function CaseStudyCard({
           <img
             className={styles.image}
             src={study.image}
-            alt="Hirani Law Firm"
+            alt={study.imageAlt}
             loading="lazy"
           />
         </div>

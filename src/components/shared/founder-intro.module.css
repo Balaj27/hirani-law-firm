@@ -143,19 +143,23 @@
 @media (max-width: 809px) {
   .layout {
     grid-template-columns: 1fr;
-    width: 100%;
-    gap: 40px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    gap: 32px;
   }
   .profile {
     width: 100%;
     min-width: 0;
-    max-width: 380px;
+    max-width: none;
   }
   .identity {
     flex-wrap: nowrap;
+    gap: 16px;
+    margin-bottom: 28px;
   }
   .signature {
-    max-width: 180px;
+    width: 44%;
+    max-width: 150px;
   }
   .content .headline {
     font-size: clamp(32px, 6vw, 46px) !important;
@@ -164,8 +168,11 @@
     margin: 32px 0 28px;
   }
   .quote {
-    grid-template-columns: minmax(0, 1fr) 36px;
-    gap: 16px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  .quoteMark {
+    display: none;
   }
   .lead {
     font-size: 19px;
@@ -179,5 +186,9 @@
   }
   .contacts a {
     font-size: 14px;
+    min-width: 0;
+  }
+  .contacts a > span:last-child {
+    overflow-wrap: anywhere;
   }
 }
