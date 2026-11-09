@@ -1,4 +1,6 @@
 "use client";
+import { ArrowIcon } from "@/components/ui/arrow-icon";
+
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import styles from "./scroll-zoom-cta.module.css";
@@ -22,7 +24,6 @@ export function ScrollZoomCTA({
 }: Props) {
   const section = useRef<HTMLElement>(null);
   const content = useRef<HTMLDivElement>(null);
-  const media = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const root = section.current;
     const text = content.current;
@@ -56,12 +57,8 @@ export function ScrollZoomCTA({
     const measure = () => {
       headerHeight = header?.getBoundingClientRect().height ?? 0;
       const available = Math.max(0, innerHeight - headerHeight);
-      const stacked = innerWidth <= 809;
-      const natural =
-        text.scrollHeight +
-        64 +
-        (stacked ? (media.current?.scrollHeight ?? 0) + 32 : 0);
-      const fits = !stacked && natural <= available;
+      const natural = text.scrollHeight + 64;
+      const fits = natural <= available;
       const stageHeight = Math.max(available, natural);
       travel = reduced.matches || !fits ? 0 : innerHeight;
       minScale =
@@ -79,7 +76,6 @@ export function ScrollZoomCTA({
     };
     const observer = new ResizeObserver(measure);
     observer.observe(text);
-    if (media.current) observer.observe(media.current);
     if (header) observer.observe(header);
     window.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", measure);
@@ -101,7 +97,7 @@ export function ScrollZoomCTA({
       aria-label="Speak with our attorneys"
     >
       <div className={styles.stage}>
-        <div ref={media} className={styles.media} aria-hidden="true">
+        <div className={styles.media} aria-hidden="true">
           {video ? (
             <video
               src={video}
@@ -128,7 +124,9 @@ export function ScrollZoomCTA({
           <h2>{title}</h2>
           <Link href={href}>
             {label}
-            <span aria-hidden="true">↗</span>
+            <span aria-hidden="true">
+              <ArrowIcon />
+            </span>
           </Link>
         </div>
       </div>

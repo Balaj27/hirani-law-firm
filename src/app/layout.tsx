@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SiteMotion } from "@/components/ui/site-motion";
 export const metadata: Metadata = {
   title: {
     default: "Hirani Law Firm | Houston & Katy Family Law Attorney",
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body>
+        <SiteMotion />
         <a className="skip-link" href="#main-content">
           Skip to content
         </a>

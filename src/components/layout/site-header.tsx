@@ -1,4 +1,6 @@
 "use client";
+import { ArrowIcon } from "@/components/ui/arrow-icon";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -62,13 +64,21 @@ export function SiteHeader({ transparent = false }: { transparent?: boolean }) {
             <Link
               key={url}
               href={url}
-              aria-current={pathname === url ? "page" : undefined}
+              aria-current={
+                pathname === url ||
+                (url !== "/" && pathname.startsWith(url + "/"))
+                  ? "page"
+                  : undefined
+              }
             >
               {label}
             </Link>
           ))}
           <Link className="header-cta" href="/contact">
-            Free Consultation <span aria-hidden>↗</span>
+            Free Consultation{" "}
+            <span aria-hidden>
+              <ArrowIcon />
+            </span>
           </Link>
         </nav>
       </div>

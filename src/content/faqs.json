@@ -1,0 +1,175 @@
+[
+  {
+    "id": "divorce-separation",
+    "title": "Divorce & Separation",
+    "group": "Family Law",
+    "items": [
+      {
+        "question": "What is the difference between a contested and an uncontested divorce?",
+        "answer": "An uncontested divorce means both spouses agree on every issue required to finalize the case. In a contested divorce, issues such as property, support, or parenting arrangements remain unresolved and must be settled through negotiation or a court decision."
+      },
+      {
+        "question": "How is property divided in a Texas divorce? Is it always 50/50?",
+        "answer": "Texas courts divide the community estate in a manner that is just and right, which does not always mean an equal split. Separate property must be identified and supported by evidence. The spouses’ circumstances and any children can affect the division."
+      },
+      {
+        "question": "What is spousal support (alimony), and who is eligible for it in Texas?",
+        "answer": "Spouses may agree to contractual alimony. Court-ordered spousal maintenance has separate eligibility requirements, including insufficient property to meet minimum reasonable needs and additional statutory conditions. Marriage length, disability, caregiving responsibilities, and certain family-violence convictions can affect eligibility."
+      },
+      {
+        "question": "How long does a divorce take in Texas?",
+        "answer": "Texas generally requires a 60-day waiting period after filing before a divorce can be finalized, with limited exceptions. Financial disclosures, parenting disputes, negotiations, and the court’s schedule can extend the case beyond that minimum."
+      },
+      {
+        "question": "Do I need a lawyer for an amicable or uncontested divorce?",
+        "answer": "You may represent yourself, but an agreement still needs accurate documents and enforceable terms. An attorney can review property, debt, support, and parenting provisions before you sign. One attorney does not represent both spouses’ competing interests."
+      }
+    ]
+  },
+  {
+    "id": "custody-conservatorship",
+    "title": "Child Custody & Conservatorship",
+    "group": "Family Law",
+    "items": [
+      {
+        "question": "What is the difference between \"custody\" and \"conservatorship\" in Texas?",
+        "answer": "Conservatorship describes parents’ legal rights and duties, including important decisions about a child. Possession and access describe parenting time. Joint managing conservatorship does not automatically mean equal parenting time."
+      },
+      {
+        "question": "How do Texas courts decide who gets custody? What is the \"best interest of the child\"?",
+        "answer": "The child’s best interest guides the decision. Courts consider safety, emotional and physical needs, stability, parenting abilities, and the child’s circumstances. Family violence and abuse are important considerations. No single factor guarantees a particular outcome."
+      },
+      {
+        "question": "Do Texas courts favor mothers over fathers?",
+        "answer": "Texas law does not allow courts to base conservatorship or possession decisions on a parent’s sex or marital status. The child’s best interest and evidence about each parent’s circumstances guide the decision."
+      },
+      {
+        "question": "What is a Standard Possession Order (SPO)?",
+        "answer": "A Standard Possession Order sets a parenting-time schedule, including weekends, holidays, and summer periods. The applicable schedule depends on factors such as the child’s age and the distance between homes. Your signed court order controls; a different arrangement may be ordered when appropriate."
+      },
+      {
+        "question": "How can I modify my current custody or visitation order?",
+        "answer": "You generally need to ask the court to modify the existing order. The change must serve the child’s best interest and meet a legal ground, often a material and substantial change in circumstances. Additional requirements can apply to early requests to change the child’s primary residence."
+      }
+    ]
+  },
+  {
+    "id": "child-support",
+    "title": "Child Support",
+    "group": "Family Law",
+    "items": [
+      {
+        "question": "How is child support calculated in Texas?",
+        "answer": "Texas generally applies statutory guideline percentages to the paying parent’s monthly net resources. The number of children, other support obligations, income level, medical and dental support, and the child’s needs can affect the calculation. Courts may depart from the guidelines when legally justified."
+      },
+      {
+        "question": "What do I do if the other parent stops paying child support?",
+        "answer": "Keep payment records and a copy of your order. Enforcement may be available through the Texas Attorney General or a court proceeding with an attorney. Do not withhold court-ordered parenting time because support is unpaid; support and possession obligations are separate."
+      },
+      {
+        "question": "Can my child support amount be changed if my income changes?",
+        "answer": "A substantial change in circumstances may support a modification request. Other statutory review grounds may also apply. An income change does not automatically change the amount owed: continue following the existing order until it is legally modified."
+      },
+      {
+        "question": "How long does child support last in Texas?",
+        "answer": "Support generally continues until age 18 or high school graduation, whichever is later, subject to the order and statutory requirements. Different rules can apply to disability, emancipation, and other circumstances. Past-due support remains owed after current support ends."
+      }
+    ]
+  },
+  {
+    "id": "cps-defense",
+    "title": "CPS Defense",
+    "group": "Family Law",
+    "items": [
+      {
+        "question": "What are my rights if a CPS caseworker comes to my door?",
+        "answer": "Ask for the caseworker’s identification, the allegations, and your written rights. You can consult an attorney. Entry, interviews, and records requests involve consent and legal-authority questions; a court order or emergency can change what CPS may do. Do not physically obstruct officials acting under lawful authority."
+      },
+      {
+        "question": "Do I have to sign a CPS Safety Plan?",
+        "answer": "You have the right to consult an attorney before agreeing to a proposed voluntary safety plan. Ask what each term requires, how long it lasts, and how it affects contact with your child. CPS may seek court intervention if it believes a child remains unsafe."
+      },
+      {
+        "question": "Can CPS take my children without a court order?",
+        "answer": "Texas permits emergency removal without a prior court order only when statutory conditions are met, followed by required court review. Other removals require judicial authorization. Obtain the paperwork and speak with an attorney promptly about the hearing and your rights."
+      },
+      {
+        "question": "How can I fight false allegations from CPS?",
+        "answer": "Preserve relevant messages, records, witness information, and a clear timeline. An attorney can help you understand the allegations, respond accurately, and prepare for interviews or hearings. Do not coach a child or alter evidence."
+      }
+    ]
+  },
+  {
+    "id": "after-accident",
+    "title": "After an Accident & Initial Steps",
+    "group": "Personal Injury",
+    "items": [
+      {
+        "question": "What should I do immediately after a car accident?",
+        "answer": "Check for injuries and call emergency services when needed. Move to safety if possible, exchange driver and insurance information, and document the scene and witnesses when safe. Seek appropriate medical attention, keep records, and notify your insurer promptly."
+      },
+      {
+        "question": "How long do I have to file a personal injury claim in Texas?",
+        "answer": "Many Texas personal injury lawsuits have a two-year filing deadline, but exceptions and special rules can change it. Government claims may require much earlier notice. Do not assume insurance negotiations extend a deadline; have the applicable dates reviewed promptly."
+      },
+      {
+        "question": "What evidence is most important for my personal injury claim?",
+        "answer": "Useful evidence includes scene and vehicle photos, witness contacts, crash reports, medical records, bills, and proof of missed work. Preserve relevant messages, damaged items, and available video. Prompt collection matters because footage and records may be lost."
+      },
+      {
+        "question": "Should I talk to the other party's insurance company?",
+        "answer": "Be accurate and avoid guessing when providing information. Consider speaking with an attorney before giving the other insurer a recorded statement or signing a release. Your own insurance policy may separately require timely notice and cooperation."
+      }
+    ]
+  },
+  {
+    "id": "legal-process",
+    "title": "The Legal Process & Compensation",
+    "group": "Personal Injury",
+    "items": [
+      {
+        "question": "How much is my personal injury case worth?",
+        "answer": "There is no fixed value for an injury claim. Evaluation depends on liability, medical evidence, the effect on your work and daily life, available insurance, and other facts. Records must be reviewed before discussing a realistic range; no recovery is guaranteed."
+      },
+      {
+        "question": "What types of damages can I recover?",
+        "answer": "Depending on the evidence and applicable law, damages may include medical expenses, lost income, reduced earning capacity, pain, mental anguish, and physical impairment. Property damage may also be recoverable. Some claims have statutory limits; exemplary damages require additional proof."
+      },
+      {
+        "question": "How does a personal injury lawyer get paid?",
+        "answer": "Hirani Law Firm handles personal injury cases on a contingency basis: attorney fees depend on a recovery. Your written agreement explains the percentage and how case expenses are handled. Ask the team to explain those terms before representation begins."
+      },
+      {
+        "question": "Will my case go to trial, or will it settle?",
+        "answer": "A case may resolve through negotiation or mediation, but settlement requires agreement. Disputed liability or compensation may lead to litigation and potentially trial. Settlement decisions should reflect the evidence, risks, and available options."
+      },
+      {
+        "question": "How long does it take to resolve a personal injury case?",
+        "answer": "Timing varies with medical treatment, investigation, insurance review, and litigation. A straightforward claim may resolve sooner than one involving disputed fault or ongoing injuries. The team can explain likely stages after reviewing your circumstances, but an exact completion date cannot be promised."
+      }
+    ]
+  },
+  {
+    "id": "insurance-liability",
+    "title": "Insurance & Liability",
+    "group": "Personal Injury",
+    "items": [
+      {
+        "question": "What if I were partially at fault for the accident?",
+        "answer": "For claims governed by Texas proportionate-responsibility law, compensation is generally reduced by your percentage of responsibility. You generally cannot recover if your responsibility is greater than 50 percent. The applicable rules and allocation of fault depend on the claim and evidence."
+      },
+      {
+        "question": "What happens if the at-fault driver doesn't have insurance?",
+        "answer": "Your own uninsured or underinsured motorist coverage may help, if available. Personal injury protection or collision coverage may also apply to particular losses. Review policy terms, deadlines, and other potentially responsible parties before accepting a resolution."
+      },
+      {
+        "question": "Can I sue for a slip and fall accident on someone else's property?",
+        "answer": "A fall alone does not establish liability. A premises claim depends on the dangerous condition, the owner’s legal duties, notice or knowledge where required, and how the injury occurred. Photos, incident reports, witnesses, and medical records help evaluate the claim."
+      },
+      {
+        "question": "What is a wrongful death claim, and who can file one?",
+        "answer": "A wrongful death claim seeks damages when legally actionable conduct causes a death. Texas statutory beneficiaries are the surviving spouse, children, and parents. An estate representative may have duties to bring the action in specified circumstances. A separate survival claim may also exist."
+      }
+    ]
+  }
+]

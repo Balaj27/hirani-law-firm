@@ -1,4 +1,6 @@
 "use client";
+import { ArrowIcon } from "@/components/ui/arrow-icon";
+
 import { useState } from "react";
 import Link from "next/link";
 import { blogPosts } from "@/content/blog-posts";
@@ -15,7 +17,9 @@ export function BlogPosts({ filters = false }: { filters?: boolean }) {
               <p>Resources & insights</p>
               <h2>Clear, practical answers for Texas families.</h2>
             </div>
-            <Link href="/blog">All articles ↗</Link>
+            <Link href="/blog">
+              All articles <ArrowIcon />
+            </Link>
           </header>
         )}
         {filters && (
@@ -43,13 +47,13 @@ export function BlogPosts({ filters = false }: { filters?: boolean }) {
                 category === "All Articles" || post.category === category,
             )
             .map((post) => (
-              <article className={styles.card} key={post.href}>
-                <Link href={post.href} className={styles.image}>
-                  <img
-                    src={post.image}
-                    alt="Hirani Law Firm"
-                    loading="lazy"
-                  />
+              <article className={styles.card} key={post.href} data-reveal>
+                <Link
+                  href={post.href}
+                  className={styles.image}
+                  data-scroll-image="16"
+                >
+                  <img src={post.image} alt="Hirani Law Firm" loading="lazy" />
                 </Link>
                 <div className={styles.meta}>
                   <span>{post.category}</span>
@@ -61,7 +65,10 @@ export function BlogPosts({ filters = false }: { filters?: boolean }) {
                 </h3>
                 <p className={styles.description}>{post.description}</p>
                 <Link className={styles.read} href={post.href}>
-                  Read article <span aria-hidden="true">↗</span>
+                  Read article{" "}
+                  <span aria-hidden="true">
+                    <ArrowIcon />
+                  </span>
                 </Link>
               </article>
             ))}

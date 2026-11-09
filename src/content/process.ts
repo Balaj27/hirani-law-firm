@@ -12,8 +12,8 @@ export const processSteps = [
     title: "Build your strategy",
     description:
       "Your case gets a strategy shaped around your family, timeline, and legal goals. We provide clear explanations and honest updates so you know what is happening and why.",
-    image: "/assets/hirani-sehar-standing.webp",
-    alt: "Attorney Sehar Hirani",
+    image: "/assets/hirani-team-office.webp",
+    alt: "The Hirani Law Firm team preparing your strategy",
   },
   {
     number: "03",

@@ -1,0 +1,90 @@
+{
+  "sehar-hirani": {
+    "lead": "A mother, advocate, and steady guide for families in transition, Sehar Hirani understands how deeply legal matters can affect children, parents, and the future of a household.",
+    "paragraphs": [
+      "As a mom of two, Sehar is passionate about protecting children, supporting families, and defending fathers who want to remain present and active in their children’s lives.",
+      "She founded Hirani Law Firm in 2018 to offer a more personal legal experience, with clear communication, compassionate guidance, and determined representation. Her practice focuses on family law across Greater Houston and personal injury matters throughout Texas."
+    ],
+    "sectionTitle": "A personal commitment to every client",
+    "sectionText": "Your case gets a strategy shaped around your family, timeline, and legal goals. From the first conversation to resolution, Sehar’s approach combines careful listening with clear direction and strong advocacy.",
+    "focus": [
+      "Family law advocacy",
+      "Personal injury representation",
+      "Clear, practical communication",
+      "A personalized legal strategy"
+    ],
+    "education": [
+      "University of Houston",
+      "South Texas College of Law",
+      "Licensed to practice law in Texas since 2018"
+    ],
+    "recognition": [
+      "State Bar of Texas",
+      "State Bar of Texas — Family Law Section",
+      "Houston Bar Association",
+      "Fort Bend County Bar Association",
+      "Avvo",
+      "Lead Counsel Verified"
+    ]
+  },
+  "carlos-peraza": {
+    "lead": "Carlos helps prospective clients feel comfortable taking their first step toward legal help. As Intake Manager, he brings patience, empathy, and a reassuring presence to the initial conversation.",
+    "paragraphs": [
+      "He guides people through the intake process, listens to their concerns, and helps them understand how to get started with the firm. His focus is on making every prospective client feel heard and respected."
+    ],
+    "sectionTitle": "A reassuring first point of contact",
+    "sectionText": "Carlos approaches intake with warmth and professionalism, helping make an unfamiliar process feel more manageable from the first call.",
+    "focus": [
+      "Guidance through the intake process",
+      "Patient, attentive listening",
+      "A welcoming introduction to the firm"
+    ],
+    "education": [],
+    "recognition": []
+  },
+  "sami-hirani": {
+    "lead": "Sami helps clients understand billing matters with clear, straightforward communication. He also supports the intake process, helping clients make a smooth transition into working with Hirani Law Firm.",
+    "paragraphs": [
+      "He recognizes that financial uncertainty can add stress to a legal matter. His work focuses on explaining costs transparently so clients can concentrate on their case and their family."
+    ],
+    "sectionTitle": "Clarity around billing and intake",
+    "sectionText": "Sami values honest conversations about costs and a supportive experience as clients begin their work with the firm.",
+    "focus": [
+      "Billing communication",
+      "Clarity about costs",
+      "Support during client intake"
+    ],
+    "education": [],
+    "recognition": []
+  },
+  "nicole-erazo": {
+    "lead": "Nicole welcomes clients to Hirani Law Firm with a friendly, service-focused approach. She brings enthusiasm for the legal field and a strong commitment to the team’s work.",
+    "paragraphs": [
+      "She aspires to become an attorney and values the opportunity to learn while helping clients feel welcome. Outside the office, Nicole enjoys fitness and staying active."
+    ],
+    "sectionTitle": "A warm welcome to Hirani Law Firm",
+    "sectionText": "Nicole values discipline, determination, and thoughtful service in both her professional work and personal interests.",
+    "focus": [
+      "Welcoming clients",
+      "Reception and client service",
+      "An enthusiasm for legal learning"
+    ],
+    "education": [],
+    "recognition": []
+  },
+  "noraly-martinez": {
+    "lead": "Noraly supports clients through difficult legal matters with patience, compassion, and care. As a paralegal, she is committed to building her legal knowledge while helping people who need support.",
+    "paragraphs": [
+      "Noraly aspires to become an attorney. Outside the office, she enjoys time with her nieces and nephews, and brings that same patient, caring outlook to her interactions with clients."
+    ],
+    "sectionTitle": "Compassionate support throughout your matter",
+    "sectionText": "Noraly approaches her work with a focus on client care and continued learning, supporting the firm’s collaborative approach to each matter.",
+    "focus": [
+      "Paralegal support",
+      "Patient, compassionate client care",
+      "Continued legal learning"
+    ],
+    "education": [],
+    "recognition": []
+  }
+}

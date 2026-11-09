@@ -1,7 +1,7 @@
 .section {
   position: relative;
   width: 100%;
-  background: white;
+  background: #fff;
   --zoom-min-scale: 0.72;
   --zoom-scale: 0.72;
 }
@@ -10,47 +10,45 @@
   height: var(--zoom-stage-height, calc(100svh - 96px));
   min-height: min-content;
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  align-items: center;
-  gap: clamp(24px, 4vw, 64px);
+  place-items: center;
+  isolation: isolate;
   overflow: clip;
-  padding: 32px 4vw;
-  background: #1f2115;
+  padding: 32px 24px;
 }
 .section[data-pinned="true"] .stage {
   position: sticky;
   top: var(--zoom-header-height, 96px);
 }
 .media {
-  position: relative;
-  grid-column: 2;
-  grid-row: 1;
-  min-width: 0;
+  position: absolute;
+  inset: 0;
   transform: scale(var(--zoom-scale));
   transform-origin: center;
+  z-index: -1;
   will-change: transform;
 }
 .media video,
 .media img {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
 }
 .shade {
-  display: none;
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 25, 16, 0.48);
 }
 .content {
-  grid-column: 1;
-  grid-row: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: clamp(18px, 3vh, 30px);
-  max-width: 650px;
-  width: 100%;
+  max-width: 850px;
+  width: 60%;
   color: white;
-  text-align: left;
+  text-align: center;
 }
 .content > img {
   width: clamp(140px, 18vw, 220px);
@@ -61,10 +59,11 @@
   margin: 0;
   color: inherit;
   font:
-    300 clamp(28px, min(3.7vw, 5.5vh), 64px)/1.1 Fraunces,
+    300 clamp(28px, min(4.3vw, 6vh), 72px)/1.08 Fraunces,
     Georgia,
     serif;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.05em;
+  text-wrap: balance;
 }
 .content > a {
   display: inline-flex;
@@ -82,19 +81,15 @@
   text-decoration: none;
 }
 @media (max-width: 809px) {
-  .stage {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    padding: 40px 24px;
+  .section {
+    --zoom-min-scale: 0.94;
   }
-  .media {
-    grid-column: 1;
-    grid-row: 1;
+  .stage {
+    padding: 32px 24px;
   }
   .content {
-    grid-column: 1;
-    grid-row: 2;
-    max-width: none;
+    width: 100%;
+    max-width: 560px;
   }
   .content h2 {
     font-size: clamp(28px, 6vw, 44px);

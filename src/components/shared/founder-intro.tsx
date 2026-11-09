@@ -41,6 +41,7 @@ export function FounderIntro() {
         </div>
         <img
           className={styles.portrait}
+          data-scroll-image="38"
           src="/assets/hirani-sehar-standing.webp"
           alt="Sehar Hirani, Managing Attorney"
           width="800"

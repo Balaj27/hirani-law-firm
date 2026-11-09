@@ -29,6 +29,6 @@ export const blogPosts = [
     description:
       "Been in a car accident in Texas? Learn the four critical steps to take in the first 72 hours to protect your health and your legal claim.",
     href: "https://www.hiranilawfirm.com/blog/car-accident-texas-what-to-do",
-    image: "/assets/hirani-home-hero.webp",
+    image: "/assets/hirani-team-office.webp",
   },
 ];

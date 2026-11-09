@@ -1,3 +1,4 @@
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import Link from "next/link";
 import { caseStudies } from "@/content/case-studies";
 import { StickyCaseStack } from "./sticky-case-stack";
@@ -65,7 +66,10 @@ export function CaseStudies8() {
           </p>
           <div className={styles.buttons}>
             <Link className={styles.primary} href="/contact">
-              Get Your Case Reviewed<span aria-hidden="true">↗</span>
+              Get Your Case Reviewed
+              <span aria-hidden="true">
+                <ArrowIcon />
+              </span>
             </Link>
             <Link
               className={styles.secondary}

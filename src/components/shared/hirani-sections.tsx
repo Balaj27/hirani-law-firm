@@ -1,3 +1,4 @@
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import Link from "next/link";
 import {
   experience,
@@ -19,7 +20,7 @@ function Items({
   return (
     <div className={styles.grid}>
       {items.map((item, i) => (
-        <article className={styles.item} key={item.title}>
+        <article className={styles.item} key={item.title} data-reveal>
           <span className={styles.number}>0{i + 1}</span>
           <h3>{item.title}</h3>
           <p>{item.description}</p>
@@ -50,7 +51,10 @@ export function WhoWeAre() {
               Law Firm brings the same commitment: your case is personal to us.
             </p>
             <Link className={styles.button} href="/about">
-              About our firm <span aria-hidden="true">↗</span>
+              About our firm{" "}
+              <span aria-hidden="true">
+                <ArrowIcon />
+              </span>
             </Link>
           </div>
         </div>
@@ -134,7 +138,10 @@ export function WorkingWithUs() {
         </h2>
         <Items items={experience} />
         <Link className={styles.button} href="/contact">
-          Free confidential consultation <span aria-hidden="true">↗</span>
+          Free confidential consultation{" "}
+          <span aria-hidden="true">
+            <ArrowIcon />
+          </span>
         </Link>
       </div>
     </section>
@@ -159,6 +166,7 @@ export function AttorneyProfile() {
         <div className={styles.split}>
           <img
             className={styles.photo}
+            data-scroll-image="30"
             src="/assets/hirani-sehar-standing.webp"
             alt="Sehar Hirani, Managing Attorney"
             loading="lazy"
@@ -188,7 +196,10 @@ export function AttorneyProfile() {
               </p>
             </div>
             <Link href="/contact" className={styles.button}>
-              Speak with Sehar <span aria-hidden="true">↗</span>
+              Speak with Sehar{" "}
+              <span aria-hidden="true">
+                <ArrowIcon />
+              </span>
             </Link>
           </div>
         </div>
@@ -235,19 +246,24 @@ export function ServiceDirectory() {
                 }
               >
                 Explore {group}
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">
+                  <ArrowIcon />
+                </span>
               </Link>
             </div>
             <div className={styles.serviceGrid}>
               {practices
                 .filter((p) => p.group === group && !p.parent)
                 .map((p) => (
-                  <article className={styles.service} key={p.href}>
+                  <article className={styles.service} key={p.href} data-reveal>
                     <img src={p.icon} alt="" />
                     <h3>{p.title}</h3>
                     <p>{p.description}</p>
                     <Link href={p.href}>
-                      View more <span aria-hidden="true">↗</span>
+                      View more{" "}
+                      <span aria-hidden="true">
+                        <ArrowIcon />
+                      </span>
                     </Link>
                   </article>
                 ))}
@@ -266,7 +282,7 @@ export function Resources() {
         <p className={styles.eyebrow}>Resources</p>
         <h2>Additional useful resources for you.</h2>
         <div className={styles.resources}>
-          <article className={styles.resource}>
+          <article className={styles.resource} data-reveal>
             <small>PDF · Free download</small>
             <h3>2026 Custody Sharing Calendar</h3>
             <p>
@@ -278,10 +294,10 @@ export function Resources() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download calendar ↗
+              Download calendar <ArrowIcon />
             </a>
           </article>
-          <article className={styles.resource}>
+          <article className={styles.resource} data-reveal>
             <small>PDF · Free download</small>
             <h3>2027 Standard Possession Order Calendar</h3>
             <p>
@@ -294,7 +310,7 @@ export function Resources() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download calendar ↗
+              Download calendar <ArrowIcon />
             </a>
           </article>
         </div>

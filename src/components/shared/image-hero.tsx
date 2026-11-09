@@ -1,3 +1,4 @@
+import { ArrowIcon } from "@/components/ui/arrow-icon";
 import Link from "next/link";
 import styles from "./image-hero.module.css";
 
@@ -18,29 +19,39 @@ export function ImageHero({
   home = false,
 }: Props) {
   return (
-    <section className={styles.hero} id="hero">
+    <section className={`${styles.hero} ${home ? styles.home : ""}`} id="hero">
       <div className={styles.inner}>
         <div className={styles.copy}>
-          <p className={styles.eyebrow}>{eyebrow}</p>
+          {!home && <p className={styles.eyebrow}>{eyebrow}</p>}
           <h1>{title}</h1>
           {description && <p className={styles.description}>{description}</p>}
           {home && (
             <>
               <div className={styles.buttons}>
-                <Link href="/contact">
-                  Free consultation <span aria-hidden="true">↗</span>
-                </Link>
                 <Link href="/practice-areas">
-                  Practice areas <span aria-hidden="true">↗</span>
+                  Practice areas{" "}
+                  <span aria-hidden="true">
+                    <ArrowIcon />
+                  </span>
+                </Link>
+                <Link href="/about">
+                  Learn more{" "}
+                  <span aria-hidden="true">
+                    <ArrowIcon />
+                  </span>
                 </Link>
               </div>
+              <p className={styles.homeLabel}>{eyebrow}</p>
               <p className={styles.note}>
                 Protecting Texas families since 2018.
               </p>
             </>
           )}
         </div>
-        <div className={styles.media}>
+        <div
+          className={styles.media}
+          data-scroll-image={home ? undefined : "32"}
+        >
           <img src={image} alt={alt} fetchPriority="high" decoding="async" />
         </div>
       </div>

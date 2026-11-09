@@ -1,4 +1,6 @@
-import team from "@/content/team.json";
+import { ArrowIcon } from "@/components/ui/arrow-icon";
+import { teamProfiles as team } from "@/content/team-profiles";
+import Link from "next/link";
 import styles from "./team-section.module.css";
 
 export function TeamSection() {
@@ -20,10 +22,11 @@ export function TeamSection() {
         </header>
         <div className={styles.grid}>
           {team.map((member) => (
-            <article className={styles.card} key={member.slug}>
-              <a
+            <article className={styles.card} key={member.slug} data-reveal>
+              <Link
                 href={member.href}
                 className={styles.photoLink}
+                data-scroll-image="18"
                 aria-label={`Meet ${member.name}`}
               >
                 <img
@@ -34,12 +37,12 @@ export function TeamSection() {
                   height="1000"
                 />
                 <span className={styles.arrow} aria-hidden="true">
-                  ↗
+                  <ArrowIcon />
                 </span>
-              </a>
+              </Link>
               <p className={styles.role}>{member.role}</p>
               <h3>
-                <a href={member.href}>{member.name}</a>
+                <Link href={member.href}>{member.name}</Link>
               </h3>
             </article>
           ))}

@@ -12,7 +12,7 @@ A responsive Next.js App Router / React / TypeScript website using the approved 
 
 ## Pages
 
-Home, About, Our Team, Practice Areas, Blog, Contact, and 19 shared practice-detail routes. The detail pages cover the Family Law and Personal Injury groups plus 12 family services and five injury services. Unknown services return 404.
+Home, About, Our Team, Practice Areas, Blog, Contact, 19 shared practice-detail routes, and five local team profiles at /attorneys/[slug]. The detail pages cover the Family Law and Personal Injury groups plus 12 family services and five injury services. Unknown services return 404.
 
 ## Editable content
 
@@ -23,19 +23,21 @@ Home, About, Our Team, Practice Areas, Blog, Contact, and 19 shared practice-det
 - src/content/blog-posts.ts — three supplied article previews and links to the complete articles on hiranilawfirm.com.
 - src/content/process.ts — consultation process cards.
 - src/content/case-studies.ts — the former sample-case stack now presents the supplied Personal Injury benefits; it contains no sample verdicts or invented case outcomes.
-- src/content/faqs.ts — Hirani-specific FAQs.
+- src/content/faqs.json — 31 FAQ questions and drafted answers, organized into seven topics under Family Law and Personal Injury. src/content/faqs.ts exports the categories. See docs/faq-content-notes.md for content sources.
 
-The shared sections are in src/components/shared/. The five supplied team portraits are stored locally and listed in src/content/team.json. Team cards appear on Home and Our Team; profile links open the supplied original Hirani bios. Sehar’s actual portrait replaces the founder/profile placeholders throughout. The five additional supplied office photographs replace the old people imagery across the homepage hero, galleries, service pages, process cards, blog previews, and footer. Optimized WebP files are stored locally; src/content/media.ts lists the shared photographs. The last supplied photo is the homepage hero. The provided Hirani logo is stored at public/assets/hirani-logo.png. The old founder signature is replaced with the firm mark.
+The shared sections are in src/components/shared/. The five supplied team portraits are stored locally and listed in src/content/team.json. Team cards appear on Home and Our Team and link to local profile pages. The profile layout follows inspo/inner-attorney.html, with a sticky portrait, biography, contact strip, role-specific sections, shared consultation form, and previous/next navigation. Profile copy is in src/content/team-profiles.json; original bio source URLs are preserved in team.json. Only Sehar’s profile shows education, bar admission, and professional memberships. Sehar’s actual portrait replaces the founder/profile placeholders throughout. The five additional supplied office photographs replace the old people imagery across the homepage hero, galleries, service pages, process cards, blog previews, and footer. Optimized WebP files are stored locally; src/content/media.ts lists the shared photographs. The last supplied photo is the homepage hero. The provided Hirani logo is stored at public/assets/hirani-logo.png. The old founder signature is replaced with the firm mark.
 
-The supplied address, 22336 Grand Corner Drive, Suite 130, Katy, TX 77494, is used consistently in the contact section, directions, and map. Calendar downloads and full blog articles link to the original Hirani website. No article body copy or new legal claims have been invented.
+The supplied address, 22336 Grand Corner Drive, Suite 130, Katy, TX 77494, is used consistently in the contact section, directions, and map. Calendar downloads and full blog articles link to the original Hirani website. Article body copy is not reproduced locally. FAQ answers are new general-information drafts, not quotations from Hirani's existing site.
 
 ## Interactions
 
-The homepage keeps the scroll-driven horizontal practice-card stack, sticky benefits stack, expanding process cards, native FAQ accordion, and photo zoom above the footer. The shared Home/About photo gallery starts expanded and shrinks into its center card as the user scrolls. Original people footage is no longer rendered. Reduced-motion preferences and small screens have adaptive layouts.
+The homepage keeps the scroll-driven horizontal practice-card stack, sticky benefits stack, expanding process cards, native FAQ accordion, and photo zoom above the footer. The shared Home/About photo gallery starts expanded and shrinks into its center card as the user scrolls. The homepage hero keeps its full-width background layout. Benefits use separate image and copy panels; team and blog cards use filled frames with subject-aware positioning. Process photos use matching landscape proportions. The centered CTA above the footer keeps the reference’s expanding background animation. Original people footage is no longer rendered. Reduced-motion preferences and small screens have adaptive layouts.
 
 Consultation and newsletter forms validate input and open an email draft to info@hiranilawfirm.com. They do not deliver or save inquiries without the user sending that email. A delivery backend is needed before launching a directly submitted form.
 
 ## Development notes
+
+Site-wide motion is managed by src/components/ui/site-motion.tsx. Headings and marked cards reveal on entry; data-scroll-image marks photo frames or portraits for reversible vertical parallax without scaling or changing image crops. The numeric attribute sets maximum travel in pixels, reduced to 40% on small screens. Only nearby images update, using one eased animation-frame loop that stops when settled. Route changes remove observers/listeners and bind the new page; reduced-motion preferences disable these effects. Existing pinned galleries, the horizontal practice stack, and footer zoom retain their own timelines.
 
 Generated Next.js output is in .next/. After changing the route structure, restart the dev server if its route map is stale. If hot reload enters a loop, stop the project dev process and regenerate its .next/dev cache; do not remove source files or run multiple dev servers against the same cache.
 

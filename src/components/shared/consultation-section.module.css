@@ -89,6 +89,10 @@
     Georgia,
     serif;
 }
+.form.plain {
+  padding: 0;
+  background: transparent;
+}
 .fields {
   display: grid;
   grid-template-columns: 1fr 1fr;

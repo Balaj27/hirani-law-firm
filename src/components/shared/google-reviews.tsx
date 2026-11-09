@@ -1,4 +1,6 @@
 "use client";
+import { ArrowIcon } from "@/components/ui/arrow-icon";
+
 import { useState } from "react";
 import reviews from "@/content/google-reviews.json";
 import styles from "./google-reviews.module.css";
@@ -81,7 +83,10 @@ function ReviewCard({ review }: { review: (typeof reviews.reviews)[number] }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        View on Google <span aria-hidden="true">↗</span>
+        View on Google{" "}
+        <span aria-hidden="true">
+          <ArrowIcon />
+        </span>
       </a>
     </article>
   );
@@ -143,7 +148,7 @@ export function GoogleReviews({ embedded = false }: { embedded?: boolean }) {
             aria-label="Previous reviews"
             onClick={() => setPage((page + pageCount - 1) % pageCount)}
           >
-            ←
+            <ArrowIcon direction="left" />
           </button>
           <span>
             {page + 1} / {pageCount}
@@ -153,11 +158,14 @@ export function GoogleReviews({ embedded = false }: { embedded?: boolean }) {
             aria-label="Next reviews"
             onClick={() => setPage((page + 1) % pageCount)}
           >
-            →
+            <ArrowIcon direction="right" />
           </button>
         </div>
         <a href={reviews.profileUrl} target="_blank" rel="noopener noreferrer">
-          Read all reviews on Google <span aria-hidden="true">↗</span>
+          Read all reviews on Google{" "}
+          <span aria-hidden="true">
+            <ArrowIcon />
+          </span>
         </a>
       </div>
     </section>

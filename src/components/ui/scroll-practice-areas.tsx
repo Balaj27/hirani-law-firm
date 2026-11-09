@@ -1,4 +1,6 @@
 "use client";
+import { ArrowIcon } from "@/components/ui/arrow-icon";
+
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import allPractices from "@/content/practice-areas.json";
@@ -111,7 +113,10 @@ export function ScrollPracticeAreas() {
             </h2>
           </div>
           <Link className={styles.button} href="/practice-areas">
-            Learn More<span aria-hidden="true">↗</span>
+            Learn More
+            <span aria-hidden="true">
+              <ArrowIcon />
+            </span>
           </Link>
         </header>
         <div ref={rail} className={styles.rail}>
@@ -134,7 +139,10 @@ export function ScrollPracticeAreas() {
                 <p className={styles.description}>{practice.description}</p>
                 <div className={styles.action}>
                   <Link className={styles.button} href={practice.href}>
-                    Read More<span aria-hidden="true">↗</span>
+                    Read More
+                    <span aria-hidden="true">
+                      <ArrowIcon />
+                    </span>
                   </Link>
                 </div>
               </article>
@@ -153,7 +161,10 @@ export function ScrollPracticeAreas() {
               </p>
               <div className={styles.action}>
                 <Link className={styles.button} href="/contact">
-                  Free Consultation<span aria-hidden="true">↗</span>
+                  Free Consultation
+                  <span aria-hidden="true">
+                    <ArrowIcon />
+                  </span>
                 </Link>
               </div>
             </article>

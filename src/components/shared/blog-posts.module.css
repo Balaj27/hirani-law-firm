@@ -61,11 +61,11 @@
 .image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   transition: transform 0.35s;
 }
 .image:hover img {
-  opacity: .94;
+  opacity: 0.94;
 }
 .meta {
   display: flex;

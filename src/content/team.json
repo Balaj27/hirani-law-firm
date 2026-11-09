@@ -5,7 +5,8 @@
     "slug": "sehar-hirani",
     "image": "/assets/sehar-hirani.jpg",
     "imageUrl": "https://www.hiranilawfirm.com/assets/sehar-portrait-BO2g35QK.jpg",
-    "href": "https://www.hiranilawfirm.com/about/sehar-hirani"
+    "href": "/attorneys/sehar-hirani",
+    "sourceHref": "https://www.hiranilawfirm.com/about/sehar-hirani"
   },
   {
     "name": "Carlos Peraza",
@@ -13,7 +14,8 @@
     "slug": "carlos-peraza",
     "image": "/assets/carlos-peraza.jpg",
     "imageUrl": "https://www.hiranilawfirm.com/assets/carlos-Cb2VymoQ.jpg",
-    "href": "https://www.hiranilawfirm.com/about/our-team/carlos-peraza"
+    "href": "/attorneys/carlos-peraza",
+    "sourceHref": "https://www.hiranilawfirm.com/about/our-team/carlos-peraza"
   },
   {
     "name": "Sami Hirani",
@@ -21,7 +23,8 @@
     "slug": "sami-hirani",
     "image": "/assets/sami-hirani.jpg",
     "imageUrl": "https://www.hiranilawfirm.com/assets/sami-CSMGzSXp.jpg",
-    "href": "https://www.hiranilawfirm.com/about/our-team/sami-hirani"
+    "href": "/attorneys/sami-hirani",
+    "sourceHref": "https://www.hiranilawfirm.com/about/our-team/sami-hirani"
   },
   {
     "name": "Nicole Erazo",
@@ -29,7 +32,8 @@
     "slug": "nicole-erazo",
     "image": "/assets/nicole-erazo.jpg",
     "imageUrl": "https://www.hiranilawfirm.com/assets/nicole-QFhRwlnv.jpg",
-    "href": "https://www.hiranilawfirm.com/about/our-team/nicole-erazo"
+    "href": "/attorneys/nicole-erazo",
+    "sourceHref": "https://www.hiranilawfirm.com/about/our-team/nicole-erazo"
   },
   {
     "name": "Noraly Martinez",
@@ -37,6 +41,7 @@
     "slug": "noraly-martinez",
     "image": "/assets/noraly-martinez.jpg",
     "imageUrl": "https://www.hiranilawfirm.com/assets/noraly-D0nQE9NV.jpg",
-    "href": "https://www.hiranilawfirm.com/about/our-team/noraly-martinez"
+    "href": "/attorneys/noraly-martinez",
+    "sourceHref": "https://www.hiranilawfirm.com/about/our-team/noraly-martinez"
   }
 ]
