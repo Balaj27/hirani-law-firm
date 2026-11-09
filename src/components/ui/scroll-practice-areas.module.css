@@ -1,0 +1,246 @@
+.section {
+  position: relative;
+  width: 100%;
+  background: #1f2119;
+  color: #fff;
+  --practice-gutter: clamp(20px, 3vw, 48px);
+  --practice-card-padding: clamp(20px, 2.2vw, 36px);
+}
+.pin {
+  position: relative;
+  height: auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 3vh, 40px);
+  padding: clamp(20px, 3vh, 40px) 0;
+  isolation: isolate;
+  overflow: clip;
+}
+.section[data-pinned="true"] .pin {
+  position: sticky;
+  top: var(--practice-header-height, 94px);
+}
+.pin :global(.framer-1fblsyw) {
+  position: relative !important;
+  top: auto !important;
+  z-index: 2;
+  width: 100% !important;
+  max-width: 1600px !important;
+  padding: 0 var(--practice-gutter) !important;
+  margin: 0 auto;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: space-between !important;
+  flex-shrink: 0;
+  gap: 24px;
+}
+.pin :global(.framer-4bqeg) {
+  width: min(70%, 1000px) !important;
+  min-width: 0;
+  display: flex !important;
+  flex-direction: column;
+  gap: clamp(12px, 2vh, 24px) !important;
+}
+.pin h2 {
+  font-size: clamp(28px, min(3.4vw, 5.3vh), 64px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.05em !important;
+}
+.pin :global(.framer-deaimj) {
+  z-index: 2;
+  position: relative !important;
+  top: auto !important;
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 var(--practice-gutter) !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  display: block !important;
+  flex-shrink: 0;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+}
+.section[data-pinned="true"] :global(.framer-deaimj) {
+  overflow-x: hidden !important;
+  scroll-snap-type: none;
+}
+.pin :global(.framer-1lhklhz) {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  width: max-content !important;
+  max-width: none !important;
+  gap: 0 !important;
+  padding: 0;
+}
+.pin :global(.framer-1lhklhz) > div {
+  position: relative !important;
+  flex: 0 0 clamp(360px, 39.3vw, 760px) !important;
+  width: clamp(360px, 39.3vw, 760px) !important;
+  height: auto;
+  align-self: stretch;
+  scroll-snap-align: start;
+}
+.section[data-pinned="true"] :global(.framer-1lhklhz) > div {
+  position: sticky !important;
+  left: var(--stack-offset, 0px);
+}
+.pin :global(.framer-1lhklhz) > div > div {
+  width: 100% !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column;
+  flex: 1 1 auto !important;
+}
+.pin :global(.framer-1lhklhz) > div > div > div,
+.pin :global(.framer-1lhklhz) > div > div > div > div {
+  width: 100% !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column;
+  flex: 1 1 auto !important;
+}
+.pin :global(.framer-P8NwM),
+.pin :global(.framer-18swjci) {
+  min-height: 0 !important;
+  height: auto !important;
+  flex: 1 1 auto !important;
+  align-items: stretch !important;
+}
+.pin :global(.framer-md5w5n),
+.pin :global(.framer-5piszj) {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: var(--practice-card-padding) !important;
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: clamp(14px, 2.2vh, 28px) !important;
+}
+.pin :global(.framer-1sg334s) {
+  width: clamp(36px, 6vh, 64px) !important;
+  height: clamp(36px, 6vh, 64px) !important;
+  margin: 0 !important;
+}
+.pin :global(.framer-1sg334s) > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+.pin :global(.framer-1qfi4ty),
+.pin :global(.framer-14mexsg) {
+  height: auto !important;
+  min-height: 0;
+  flex: 1 1 auto !important;
+  gap: clamp(12px, 1.8vh, 24px) !important;
+  justify-content: flex-start !important;
+}
+.pin :global(.framer-84nnda),
+.pin :global(.framer-12oy76r) {
+  margin-top: 0;
+  gap: clamp(14px, 2vh, 24px) !important;
+}
+.pin :global(.framer-1qajo0u),
+.pin :global(.framer-12z50x7) {
+  position: relative !important;
+  width: 100% !important;
+  flex-shrink: 0;
+}
+.pin :global(.framer-1qajo0u) h4,
+.pin :global(.framer-nhirer) h6 {
+  font-size: clamp(24px, min(2.3vw, 4vh), 40px) !important;
+  line-height: 1.12 !important;
+}
+.pin :global(.framer-117y492) p,
+.pin :global(.framer-12z50x7) p {
+  font-size: clamp(14px, 1.1vw, 18px) !important;
+  line-height: 1.45 !important;
+  overflow-wrap: break-word;
+}
+.pin :global(.framer-v88won) {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  pointer-events: none;
+}
+.pin :global(.framer-15jh1ed) {
+  position: absolute;
+  inset: 0;
+}
+.pin :global(.framer-v88won) img {
+  object-position: 65% 50% !important;
+}
+.pin :global(.framer-1ygyiby) {
+  position: absolute;
+  inset: 0;
+  background: #11140dcc;
+}
+.pin :global(.framer-u4ws56) {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #15170ee6, transparent);
+  z-index: 1;
+}
+.pin :global(.ssr-variant) {
+  display: contents !important;
+}
+.pin :global(.framer-1lhklhz) > :global(.ssr-variant) {
+  display: flex !important;
+  flex-direction: column;
+  min-width: 0;
+}
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 0 var(--practice-gutter) 24px;
+}
+.controls button {
+  padding: 10px 18px;
+  border: 1px solid #ffffff70;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  font:
+    20px/1 "DM Sans",
+    sans-serif;
+}
+.section[data-pinned="true"] .controls {
+  display: none;
+}
+@media (max-height: 700px) and (min-width: 810px) {
+  .section {
+    --practice-card-padding: 20px;
+  }
+  .pin {
+    gap: 20px;
+    padding: 16px 0;
+  }
+  .pin :global(.framer-1sg334s) {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .pin :global(.framer-md5w5n),
+  .pin :global(.framer-5piszj) {
+    gap: 12px !important;
+  }
+}
+@media (max-width: 809px) {
+  .pin {
+    padding: 40px 0 24px;
+    gap: 28px;
+  }
+  .pin :global(.framer-1fblsyw) {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 24px;
+  }
+  .pin :global(.framer-4bqeg) {
+    width: 100% !important;
+  }
+  .pin :global(.framer-1lhklhz) > div {
+    flex-basis: calc(100vw - 56px) !important;
+    width: calc(100vw - 56px) !important;
+  }
+}

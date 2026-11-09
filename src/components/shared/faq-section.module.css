@@ -1,0 +1,232 @@
+.section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.65fr);
+  align-items: stretch;
+  column-gap: clamp(32px, 6vw, 96px);
+  row-gap: 32px;
+  width: 100%;
+  color: #302f20;
+}
+.header {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e9e9e6;
+}
+.header h2 {
+  margin: 0;
+  color: #302f20;
+  font:
+    300 clamp(28px, 2.5vw, 36px)/1.15 Fraunces,
+    Georgia,
+    serif;
+  letter-spacing: -0.04em;
+}
+.header > p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #88865a;
+  font:
+    400 14px/1.5 "DM Sans",
+    sans-serif;
+}
+.header > p > span {
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: #88865a;
+}
+.intro {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.intro > p {
+  max-width: 440px;
+  margin: 0;
+  font:
+    400 clamp(16px, 1.4vw, 20px)/1.4 "DM Sans",
+    sans-serif;
+  color: #656454;
+}
+.contact {
+  margin-top: auto;
+  padding-top: 48px;
+}
+.contact p {
+  margin: 0 0 20px;
+  font:
+    400 16px/1.5 "DM Sans",
+    sans-serif;
+  color: #373623;
+}
+.contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 22px;
+  min-height: 44px;
+  border-radius: 2px;
+  background: #302f20;
+  color: #fff;
+  text-decoration: none;
+  font:
+    400 16px/1.5 "DM Sans",
+    sans-serif;
+}
+.contact a:hover {
+  background: #4a4932;
+}
+.list {
+  min-width: 0;
+}
+.item {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #e9e9e6;
+  background: transparent;
+}
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 66px;
+  padding: 22px 0;
+  list-style: none;
+  cursor: pointer;
+  color: #373623;
+  font:
+    300 clamp(20px, 1.8vw, 26px)/1.3 Fraunces,
+    Georgia,
+    serif;
+  letter-spacing: -0.025em;
+}
+.item:first-child .question {
+  padding-top: 0;
+  min-height: 44px;
+}
+.question::-webkit-details-marker {
+  display: none;
+}
+.question::marker {
+  content: "";
+}
+.question:hover {
+  color: #88865a;
+}
+.question:focus-visible {
+  outline: 2px solid #88865a;
+  outline-offset: 4px;
+}
+.icon {
+  position: relative;
+  display: block;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+}
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 17px;
+  height: 1px;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+}
+.icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.item[open] .icon {
+  color: #656454;
+}
+.item[open] .icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.item[open] .icon::after {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.answer {
+  padding: 10px 48px 24px 0;
+}
+.answer p {
+  margin: 0;
+  max-width: 720px;
+  font:
+    400 16px/1.4 "DM Sans",
+    sans-serif;
+  color: #656454;
+}
+.item[open] .answer {
+  animation: faq-reveal 0.2s ease-out;
+}
+@keyframes faq-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 809px) {
+  .section {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+  }
+  .header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 20px;
+  }
+  .header > p {
+    font-size: 13px;
+  }
+  .intro > p {
+    max-width: 560px;
+    font-size: 16px;
+  }
+  .contact {
+    padding-top: 24px;
+  }
+  .contact p {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .contact a {
+    font-size: 14px;
+  }
+  .question {
+    min-height: 68px;
+    padding: 20px 0;
+    gap: 16px;
+  }
+  .answer {
+    padding: 8px 28px 22px 0;
+  }
+  .answer p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .item[open] .answer {
+    animation: none;
+  }
+  .icon::before,
+  .icon::after {
+    transition: none;
+  }
+}

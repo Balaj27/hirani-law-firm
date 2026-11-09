@@ -1,0 +1,249 @@
+.section {
+  width: 100%;
+  background: #1f2115;
+  color: #fff;
+}
+.inner {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  padding: clamp(64px, 8vw, 132px) clamp(24px, 4vw, 64px);
+}
+.header {
+  margin-bottom: clamp(40px, 5vw, 72px);
+  max-width: 920px;
+}
+.header > p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 24px;
+  color: #e2e2e2;
+  font:
+    400 14px/1.5 "DM Sans",
+    sans-serif;
+}
+.header > p > span {
+  flex: 0 0 28px;
+  height: 1px;
+  background: currentColor;
+}
+.header > h2 {
+  margin: 0;
+  color: #fff;
+  font:
+    300 clamp(34px, 3.8vw, 64px)/1.06 Fraunces,
+    Georgia,
+    serif;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+.stack {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 3vw, 48px);
+  isolation: isolate;
+}
+.card {
+  position: relative;
+  width: 100%;
+}
+.stack[data-sticky="true"] .card {
+  position: sticky;
+  top: calc(var(--case-header-height, 96px) + 24px);
+}
+.cardLink {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: clamp(
+    360px,
+    min(44vw, calc(100svh - var(--case-header-height, 96px) - 56px)),
+    700px
+  );
+  width: 100%;
+  padding: clamp(24px, 3vw, 48px);
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  text-decoration: none;
+  background: #343627;
+}
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 34%;
+  min-width: 300px;
+  max-width: 480px;
+  padding: clamp(24px, 2.6vw, 40px);
+  border-top: 6px solid #6b6b55;
+  background: #373623;
+}
+.meta {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.meta > span {
+  display: block;
+  padding: 4px 6px;
+  font:
+    400 11px/1.2 "DM Sans",
+    sans-serif;
+  color: #fff;
+}
+.category {
+  background: #88865a;
+}
+.verdict {
+  background: #ed1717;
+}
+.panel h3 {
+  margin: 0;
+  color: #fff;
+  font:
+    300 clamp(22px, 2vw, 32px)/1.15 Fraunces,
+    Georgia,
+    serif;
+  letter-spacing: -0.035em;
+}
+.description {
+  margin: auto 0 0;
+  padding-top: clamp(40px, 4vw, 80px);
+  position: relative;
+  color: #e2e2e2;
+  font:
+    400 14px/1.4 "DM Sans",
+    sans-serif;
+}
+.description::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 20px;
+  background: #4c4c44;
+}
+.cardLink:focus-visible {
+  outline: 3px solid #b5b28c;
+  outline-offset: 4px;
+}
+.cta {
+  width: 50%;
+  margin: 40px 0 0 auto;
+  padding-left: 16px;
+}
+.cta > p {
+  margin: 0 0 24px;
+  color: #e2e2e2;
+  max-width: 660px;
+  font:
+    400 16px/1.4 "DM Sans",
+    sans-serif;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+.buttons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 44px;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  text-decoration: none;
+  font:
+    400 14px/1.4 "DM Sans",
+    sans-serif;
+}
+.primary {
+  background: #fff;
+  color: #302f20;
+}
+.buttons .secondary {
+  color: #fff;
+  border-color: #e9e9e680;
+}
+@media (max-width: 1100px) and (min-width: 810px) {
+  .panel {
+    min-width: 280px;
+    padding: 24px;
+  }
+  .description {
+    padding-top: 32px;
+  }
+}
+@media (max-height: 700px) and (min-width: 810px) {
+  .cardLink {
+    padding: 24px;
+  }
+  .panel {
+    padding: 24px;
+  }
+  .panel h3 {
+    font-size: 24px;
+  }
+  .description {
+    padding-top: 24px;
+  }
+  .description::before {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 809px) {
+  .header {
+    margin-bottom: 32px;
+  }
+  .stack {
+    gap: 28px;
+  }
+  .cardLink {
+    flex-direction: column;
+    padding: 0;
+    min-height: 0;
+  }
+  .image {
+    position: relative;
+    height: auto;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+  }
+  .panel {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    padding: 24px;
+    border-top-width: 4px;
+  }
+  .panel h3 {
+    font-size: 26px;
+  }
+  .description {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .description::before {
+    margin-bottom: 16px;
+  }
+  .cta {
+    width: 100%;
+    margin-top: 32px;
+    padding: 0;
+  }
+}

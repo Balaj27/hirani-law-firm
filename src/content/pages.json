@@ -1,0 +1,37 @@
+[
+  {
+    "id": "home",
+    "route": "/",
+    "sections": 12
+  },
+  {
+    "id": "about",
+    "route": "/about",
+    "sections": 6
+  },
+  {
+    "id": "practice-areas",
+    "route": "/practice-areas",
+    "sections": 3
+  },
+  {
+    "id": "practice-detail",
+    "route": "/practice-areas/corporate-law",
+    "sections": 2
+  },
+  {
+    "id": "attorneys",
+    "route": "/attorneys",
+    "sections": 2
+  },
+  {
+    "id": "blog",
+    "route": "/blog",
+    "sections": 2
+  },
+  {
+    "id": "contact",
+    "route": "/contact",
+    "sections": 2
+  }
+]
