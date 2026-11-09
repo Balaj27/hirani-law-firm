@@ -50,6 +50,11 @@
   max-height: 680px;
   object-fit: contain;
 }
+.media picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -261,7 +266,7 @@
     position: absolute;
   }
   .home .media img {
-    object-position: 55% center;
+    object-position: center top;
   }
   .homeLabel {
     font-size: 18px;

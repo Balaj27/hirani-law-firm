@@ -5,6 +5,7 @@ import styles from "./image-hero.module.css";
 type Props = {
   title: string;
   image: string;
+  mobileImage?: string;
   alt: string;
   eyebrow?: string;
   description?: string;
@@ -14,6 +15,7 @@ type Props = {
 export function ImageHero({
   title,
   image,
+  mobileImage,
   alt,
   eyebrow = "Hirani Law Firm · Houston & Katy, Texas",
   description,
@@ -57,7 +59,19 @@ export function ImageHero({
           className={styles.media}
           data-scroll-image={home || centered ? undefined : "32"}
         >
-          <img src={image} alt={alt} fetchPriority="high" decoding="async" />
+          {mobileImage ? (
+            <picture>
+              <source media="(max-width: 809px)" srcSet={mobileImage} />
+              <img
+                src={image}
+                alt={alt}
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
+          ) : (
+            <img src={image} alt={alt} fetchPriority="high" decoding="async" />
+          )}
         </div>
       </div>
     </section>
