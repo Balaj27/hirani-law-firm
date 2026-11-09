@@ -12,11 +12,10 @@ export function Process9() {
         <header className={styles.header}>
           <p>
             <span aria-hidden="true" />
-            Luxury in presence, strength in practice.
+            Clear strategy. Local knowledge. Steady communication.
           </p>
           <h2 id="process-heading">
-            Distinguished in stature, powerful in representation &amp;
-            relentless in advocacy.
+            A dedicated team in your corner, from intake to resolution.
           </h2>
         </header>
         <ProcessCards />

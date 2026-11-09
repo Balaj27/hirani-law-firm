@@ -2,31 +2,31 @@ export const faqs = [
   {
     question: "What areas of law do you handle?",
     answer:
-      "We provide legal services across a wide range of practice areas, including corporate law, family law, real estate, litigation, contracts, and legal advisory services tailored to both individuals and businesses.",
+      "Hirani Law Firm focuses on family law and personal injury. Family matters include divorce, custody, child support, adoption, father’s rights, modifications, enforcement, property division, marital agreements, and name changes. Injury matters include auto, truck, motorcycle, slip-and-fall, and workplace injuries.",
   },
   {
-    question: "How do I schedule a consultation?",
+    question: "How do I schedule a free consultation?",
     answer:
-      "Use the consultation form or contact our team by phone or email to arrange a meeting.",
+      "Call 281-665-8188, email info@hiranilawfirm.com, or use the consultation form. Your first conversation is confidential and carries no obligation.",
+  },
+  {
+    question: "Where do you represent clients?",
+    answer:
+      "We handle family law matters across Greater Houston, including Harris, Fort Bend, Montgomery, Galveston, and Austin Counties. Personal injury representation is available throughout Texas.",
   },
   {
     question: "What should I bring to my first meeting?",
     answer:
-      "Bring relevant documents, correspondence, and a list of questions about your matter.",
+      "Bring relevant court orders, correspondence, records, and a list of questions. Our team can explain what information is needed for your particular matter.",
   },
   {
-    question: "Will my information remain confidential?",
+    question: "Do I pay anything up front for a personal injury case?",
     answer:
-      "Contact our team to discuss confidentiality and the terms of a consultation before sharing sensitive information.",
+      "We handle personal injury cases on a contingency basis. You owe us nothing unless we recover compensation for you. Family law fee arrangements are discussed during your consultation.",
   },
   {
-    question: "How are your legal fees structured?",
+    question: "Does submitting a form create an attorney-client relationship?",
     answer:
-      "Fees depend on the nature and scope of your matter. Our team can discuss the proposed fee arrangement during your consultation.",
-  },
-  {
-    question: "How long will my case take?",
-    answer:
-      "Timelines vary with the facts, complexity, and process involved. Your attorney can discuss the expected stages of your matter.",
+      "No. Submission allows us to contact you about your inquiry, but does not create an attorney-client relationship. Please review our Privacy Policy and speak with our team about the terms of representation.",
   },
 ];

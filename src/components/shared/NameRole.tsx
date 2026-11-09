@@ -26,7 +26,7 @@ export function NameRole() {
               "var(--extracted-r6o4lv, var(--token-2d8dd10f-093d-46af-a75a-ef4a30e3ffdc, rgb(255, 255, 255)))",
           }}
         >
-          {"William Ashford Sr"}
+          {"Sehar Hirani"}
         </p>
       </div>
       <div

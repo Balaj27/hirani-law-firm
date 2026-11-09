@@ -3,7 +3,7 @@ export function PhoneStyle13() {
     <a
       className="framer-QqYug framer-hw0mP framer-1tjy341 framer-v-akihqf framer-1j4a1uc"
       data-framer-name="Phone - Style 1"
-      href="tel:+2 011 611-4574"
+      href="tel:+12816658188"
       style={{ maxWidth: "100%", opacity: "1" }}
     >
       <div
@@ -51,7 +51,7 @@ export function PhoneStyle13() {
               "var(--extracted-r6o4lv, var(--variable-reference-AU7OAARtl-Jfbp_rFaZ))",
           }}
         >
-          {"+2 011 611-4574"}
+          {"281-665-8188"}
         </p>
       </div>
     </a>

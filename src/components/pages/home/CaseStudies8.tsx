@@ -16,11 +16,18 @@ function CaseStudyCard({
         href={study.href}
         aria-labelledby={`case-study-title-${index}`}
       >
-        <img className={styles.image} src={study.image} alt="" loading="lazy" />
+        <div className={styles.media}>
+          <img
+            className={styles.image}
+            src={study.image}
+            alt="Hirani Law Firm"
+            loading="lazy"
+          />
+        </div>
         <div className={styles.panel}>
           <div className={styles.meta}>
             <span className={styles.category}>{study.category}</span>
-            <span className={styles.verdict}>{study.verdict}</span>
+            <span className={styles.verdict}>{study.label}</span>
           </div>
           <h3 id={`case-study-title-${index}`}>{study.title}</h3>
           <p className={styles.description}>{study.description}</p>
@@ -40,22 +47,21 @@ export function CaseStudies8() {
         <header className={styles.header}>
           <p>
             <span aria-hidden="true" />
-            Refined advocacy for complex matters
+            Why Hirani Law Firm
           </p>
           <h2 id="case-studies-heading">
-            Delivering trusted legal services with experience &amp; commitment
-            to justice.
+            What sets us apart in personal injury representation.
           </h2>
         </header>
         <StickyCaseStack>
           {caseStudies.map((study, index) => (
-            <CaseStudyCard key={study.href} study={study} index={index} />
+            <CaseStudyCard key={study.title} study={study} index={index} />
           ))}
         </StickyCaseStack>
         <div className={styles.cta}>
           <p>
-            We believe legal counsel should reflect precision and attention to
-            every detail for excellence in all interaction and every outcome.
+            Evidence disappears quickly after accidents. We move fast to
+            preserve records, photos, reports, and witness statements.
           </p>
           <div className={styles.buttons}>
             <Link className={styles.primary} href="/contact">
@@ -63,9 +69,9 @@ export function CaseStudies8() {
             </Link>
             <Link
               className={styles.secondary}
-              href="https://jurista-tambe.framer.website/case-studies"
+              href="/practice-areas/personal-injury"
             >
-              More Cases
+              Explore Personal Injury
             </Link>
           </div>
         </div>

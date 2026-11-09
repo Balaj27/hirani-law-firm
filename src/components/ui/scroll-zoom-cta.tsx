@@ -4,7 +4,8 @@ import Link from "next/link";
 import styles from "./scroll-zoom-cta.module.css";
 type Props = {
   title: string;
-  video: string;
+  video?: string;
+  image?: string;
   poster: string;
   mark: string;
   href: string;
@@ -13,6 +14,7 @@ type Props = {
 export function ScrollZoomCTA({
   title,
   video,
+  image,
   poster,
   mark,
   href,
@@ -20,6 +22,7 @@ export function ScrollZoomCTA({
 }: Props) {
   const section = useRef<HTMLElement>(null);
   const content = useRef<HTMLDivElement>(null);
+  const media = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const root = section.current;
     const text = content.current;
@@ -53,8 +56,12 @@ export function ScrollZoomCTA({
     const measure = () => {
       headerHeight = header?.getBoundingClientRect().height ?? 0;
       const available = Math.max(0, innerHeight - headerHeight);
-      const natural = text.scrollHeight + 64;
-      const fits = natural <= available;
+      const stacked = innerWidth <= 809;
+      const natural =
+        text.scrollHeight +
+        64 +
+        (stacked ? (media.current?.scrollHeight ?? 0) + 32 : 0);
+      const fits = !stacked && natural <= available;
       const stageHeight = Math.max(available, natural);
       travel = reduced.matches || !fits ? 0 : innerHeight;
       minScale =
@@ -72,6 +79,7 @@ export function ScrollZoomCTA({
     };
     const observer = new ResizeObserver(measure);
     observer.observe(text);
+    if (media.current) observer.observe(media.current);
     if (header) observer.observe(header);
     window.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", measure);
@@ -93,16 +101,26 @@ export function ScrollZoomCTA({
       aria-label="Speak with our attorneys"
     >
       <div className={styles.stage}>
-        <div className={styles.media} aria-hidden="true">
-          <video
-            src={video}
-            poster={poster}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-          />
+        <div ref={media} className={styles.media} aria-hidden="true">
+          {video ? (
+            <video
+              src={video}
+              poster={poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            />
+          ) : (
+            <img
+              src={image ?? poster}
+              alt=""
+              loading="lazy"
+              width="1600"
+              height="1066"
+            />
+          )}
           <div className={styles.shade} />
         </div>
         <div ref={content} className={styles.content}>

@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Free Consultation",
+  description:
+    "Schedule a free, confidential consultation with Hirani Law Firm. Call 281-665-8188 or visit our Katy office.",
+};
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HeroHeader1 } from "@/components/pages/contact/HeroHeader1";

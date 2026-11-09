@@ -36,9 +36,11 @@ export default function Page() {
             <Video6 />
             <Attorneys7 />
             <CaseStudies8 />
+            <GoogleReviews />
             <Process9 />
             <FreeConsultation10 />
             <Blog11 />
+            <Resources />
           </main>
           <div className="framer-vonu7z-container">
             <div></div>
@@ -327,3 +329,5 @@ export default function Page() {
     </>
   );
 }
+import { GoogleReviews } from "@/components/shared/google-reviews";
+import { Resources } from "@/components/shared/hirani-sections";

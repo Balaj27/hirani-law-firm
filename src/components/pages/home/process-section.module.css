@@ -42,24 +42,21 @@
   letter-spacing: -0.05em;
   text-wrap: balance;
 }
+
 .cards {
   display: flex;
   align-items: stretch;
-  gap: 8px;
-  min-height: clamp(440px, 42vw, 620px);
+  gap: 12px;
 }
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  gap: 24px;
   flex: 1 1 0;
   min-width: 0;
-  padding: clamp(20px, 2.5vw, 40px);
+  padding: 0;
   overflow: hidden;
-  isolation: isolate;
-  border: 0;
+  border: 1px solid #e2e3da;
   border-top: 4px solid #e2e3da;
   border-radius: 0;
   background: #f5f5f1;
@@ -68,13 +65,12 @@
   cursor: pointer;
   transition:
     flex 0.55s cubic-bezier(0.22, 0.68, 0, 1),
-    color 0.35s,
     border-color 0.35s;
 }
 .card.active {
   flex: 2.4 1 0;
-  color: #fff;
   border-top-color: #88865a;
+  background: #fff;
 }
 .card:focus-visible {
   outline: 2px solid #88865a;
@@ -82,64 +78,43 @@
   z-index: 1;
 }
 .image {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: clamp(220px, 24vw, 360px);
+  flex: 0 0 auto;
+  object-fit: contain;
   object-position: center;
-  z-index: -3;
+  background: #efeee7;
 }
-.wash {
-  position: absolute;
-  inset: 0;
-  background: #f5f5f1;
-  opacity: 0.96;
-  transition: opacity 0.5s;
-  z-index: -1;
-}
+.wash,
 .shade {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(20, 22, 15, 0.02) 20%,
-    rgba(20, 22, 15, 0.8) 100%
-  );
-  opacity: 0;
-  transition: opacity 0.5s;
-  z-index: -2;
-}
-.active .wash {
-  opacity: 0;
-}
-.active .shade {
-  opacity: 1;
+  display: none;
 }
 .number {
-  align-self: flex-start;
+  position: absolute;
+  top: 16px;
+  left: 16px;
   display: grid;
   place-items: center;
   width: 36px;
   height: 36px;
-  flex-shrink: 0;
   background: #88865a;
-  color: #fff;
+  color: white;
   font:
     400 12px/1 "DM Sans",
     sans-serif;
 }
 .copy {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  gap: 12px;
-  margin-top: auto;
-  padding-top: clamp(64px, 8vw, 128px);
+  gap: 14px;
+  padding: clamp(20px, 2.1vw, 32px);
 }
 .title {
   display: block;
   font:
-    300 clamp(21px, 1.9vw, 30px)/1.15 Fraunces,
+    300 clamp(22px, 1.9vw, 30px)/1.15 Fraunces,
     Georgia,
     serif;
   letter-spacing: -0.035em;
@@ -147,9 +122,9 @@
 .description {
   display: block;
   font:
-    400 16px/1.4 "DM Sans",
+    400 16px/1.5 "DM Sans",
     sans-serif;
-  color: inherit;
+  color: #656454;
   overflow-wrap: break-word;
 }
 .faq {
@@ -159,11 +134,8 @@
   .description {
     font-size: 14px;
   }
-  .card {
-    padding: 20px;
-  }
   .copy {
-    padding-top: 64px;
+    padding: 20px;
   }
 }
 @media (max-width: 809px) {
@@ -171,38 +143,27 @@
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  .header h2 {
-    max-width: 620px;
-  }
   .cards {
     flex-direction: column;
-    min-height: 0;
+    gap: 24px;
   }
   .card,
   .card.active {
     flex: none;
-    min-height: 280px;
-    padding: 24px;
   }
-  .card.active {
-    min-height: 380px;
+  .image {
+    height: auto;
+    max-height: 440px;
   }
   .copy {
-    padding-top: 48px;
+    padding: 24px;
   }
   .description {
-    max-width: 560px;
     font-size: 15px;
-  }
-  .number {
-    width: 32px;
-    height: 32px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .card,
-  .wash,
-  .shade {
+  .card {
     transition: none;
   }
 }

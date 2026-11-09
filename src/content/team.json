@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Sehar Hirani",
+    "role": "Managing Attorney",
+    "slug": "sehar-hirani",
+    "image": "/assets/sehar-hirani.jpg",
+    "imageUrl": "https://www.hiranilawfirm.com/assets/sehar-portrait-BO2g35QK.jpg",
+    "href": "https://www.hiranilawfirm.com/about/sehar-hirani"
+  },
+  {
+    "name": "Carlos Peraza",
+    "role": "Intake Manager",
+    "slug": "carlos-peraza",
+    "image": "/assets/carlos-peraza.jpg",
+    "imageUrl": "https://www.hiranilawfirm.com/assets/carlos-Cb2VymoQ.jpg",
+    "href": "https://www.hiranilawfirm.com/about/our-team/carlos-peraza"
+  },
+  {
+    "name": "Sami Hirani",
+    "role": "Billing Specialist / Intake",
+    "slug": "sami-hirani",
+    "image": "/assets/sami-hirani.jpg",
+    "imageUrl": "https://www.hiranilawfirm.com/assets/sami-CSMGzSXp.jpg",
+    "href": "https://www.hiranilawfirm.com/about/our-team/sami-hirani"
+  },
+  {
+    "name": "Nicole Erazo",
+    "role": "Receptionist",
+    "slug": "nicole-erazo",
+    "image": "/assets/nicole-erazo.jpg",
+    "imageUrl": "https://www.hiranilawfirm.com/assets/nicole-QFhRwlnv.jpg",
+    "href": "https://www.hiranilawfirm.com/about/our-team/nicole-erazo"
+  },
+  {
+    "name": "Noraly Martinez",
+    "role": "Paralegal",
+    "slug": "noraly-martinez",
+    "image": "/assets/noraly-martinez.jpg",
+    "imageUrl": "https://www.hiranilawfirm.com/assets/noraly-D0nQE9NV.jpg",
+    "href": "https://www.hiranilawfirm.com/about/our-team/noraly-martinez"
+  }
+]

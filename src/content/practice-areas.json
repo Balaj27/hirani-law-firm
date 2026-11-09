@@ -1,0 +1,173 @@
+[
+  {
+    "title": "Family Law",
+    "description": "Divorce, child custody, modifications, child support, father’s rights, conservatorship, name changes, adoptions, enforcements, property division, and marital agreements.",
+    "group": "Family Law",
+    "href": "/practice-areas/family-law",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": true,
+    "parent": true
+  },
+  {
+    "title": "Personal Injury",
+    "description": "Personal injury, car accidents, 18-wheeler accidents, slip and falls, workplace injuries, and motorcycle accidents.",
+    "group": "Personal Injury",
+    "href": "/practice-areas/personal-injury",
+    "icon": "/assets/practice-medical-law.svg",
+    "featured": true,
+    "parent": true
+  },
+  {
+    "title": "Divorce",
+    "description": "Contested & uncontested divorce, property division, spousal support, and final decree filings in Texas.",
+    "group": "Family Law",
+    "href": "/practice-areas/divorce",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": true,
+    "parent": false
+  },
+  {
+    "title": "Child Custody",
+    "description": "Conservatorship, possession schedules, best-interest determinations, and parenting plan negotiations.",
+    "group": "Family Law",
+    "href": "/practice-areas/child-custody",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": true,
+    "parent": false
+  },
+  {
+    "title": "Child Support",
+    "description": "Establishing, enforcing, and modifying child support orders under Texas statutory guidelines.",
+    "group": "Family Law",
+    "href": "/practice-areas/child-support",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Adoption",
+    "description": "Child and adult adoptions, stepparent adoptions, and family formation proceedings in Texas courts.",
+    "group": "Family Law",
+    "href": "/practice-areas/adoption",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": true,
+    "parent": false
+  },
+  {
+    "title": "Father’s Rights",
+    "description": "Protecting fathers’ legal rights to access, custody, and meaningful involvement in their children’s lives.",
+    "group": "Family Law",
+    "href": "/practice-areas/fathers-rights",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Conservatorship",
+    "description": "Sole and joint managing conservatorship, rights and duties, and possession order structuring.",
+    "group": "Family Law",
+    "href": "/practice-areas/conservatorship",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Modifications",
+    "description": "Modifying custody, support, and visitation orders when life circumstances have materially changed.",
+    "group": "Family Law",
+    "href": "/practice-areas/modifications",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Enforcement & Contempt",
+    "description": "Holding non-compliant parties accountable and enforcing existing court orders through legal action.",
+    "group": "Family Law",
+    "href": "/practice-areas/enforcement-contempt",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Property Division",
+    "description": "Community property analysis, asset valuation, and equitable division of marital estate under Texas law.",
+    "group": "Family Law",
+    "href": "/practice-areas/property-division",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Prenuptial Agreements",
+    "description": "Drafting and reviewing premarital agreements that protect both parties and hold up in Texas courts.",
+    "group": "Family Law",
+    "href": "/practice-areas/prenuptial-agreements",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Postnuptial Agreements",
+    "description": "Marital property agreements entered into after marriage to clarify asset ownership and expectations.",
+    "group": "Family Law",
+    "href": "/practice-areas/postnuptial-agreements",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Name Changes",
+    "description": "Adult and minor name change petitions filed and handled through the appropriate Texas courts.",
+    "group": "Family Law",
+    "href": "/practice-areas/name-changes",
+    "icon": "/assets/practice-family-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Auto Accidents",
+    "description": "Car accident claims, insurance negotiations, and litigation for crash victims across Houston and Texas. Whether it is a rear-end collision or a multi-vehicle accident, we fight for full compensation.",
+    "group": "Personal Injury",
+    "href": "/practice-areas/auto-accidents",
+    "icon": "/assets/practice-medical-law.svg",
+    "featured": true,
+    "parent": false
+  },
+  {
+    "title": "18-Wheeler Accidents",
+    "description": "Trucking accident cases involving federal regulations, commercial carriers, logbook violations, and catastrophic injuries. These cases require specialized knowledge — we have it.",
+    "group": "Personal Injury",
+    "href": "/practice-areas/18-wheeler-accidents",
+    "icon": "/assets/practice-medical-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Motorcycle Accidents",
+    "description": "Protecting injured motorcyclists from biased insurance adjusters and pursuing the full compensation they deserve.",
+    "group": "Personal Injury",
+    "href": "/practice-areas/motorcycle-accidents",
+    "icon": "/assets/practice-medical-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Slip & Fall",
+    "description": "Premises liability claims against property owners and businesses that failed to maintain reasonably safe conditions.",
+    "group": "Personal Injury",
+    "href": "/practice-areas/slip-fall",
+    "icon": "/assets/practice-medical-law.svg",
+    "featured": false,
+    "parent": false
+  },
+  {
+    "title": "Workers’ Compensation",
+    "description": "Workplace injury claims, denied benefits, and employer disputes handled throughout Texas.",
+    "group": "Personal Injury",
+    "href": "/practice-areas/workers-compensation",
+    "icon": "/assets/practice-medical-law.svg",
+    "featured": false,
+    "parent": false
+  }
+]

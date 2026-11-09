@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Practice Areas",
+  description:
+    "Family law services across Greater Houston and personal injury representation throughout Texas. Explore divorce, custody, adoption, accidents, and more.",
+};
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HeroHeader1 } from "@/components/pages/practice-areas/HeroHeader1";

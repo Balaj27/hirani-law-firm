@@ -1,3 +1,12 @@
+export const metadata = {
+  title: "Meet Our Team",
+  description:
+    "Meet the Hirani Law Firm team: Sehar Hirani, Carlos Peraza, Sami Hirani, Nicole Erazo, and Noraly Martinez. Dedicated support from your first call to resolution.",
+};
+import {
+  Memberships,
+  WorkingWithUs,
+} from "@/components/shared/hirani-sections";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HeroHeader1 } from "@/components/pages/attorneys/HeroHeader1";
@@ -20,6 +29,8 @@ export default function Page() {
           <main className="framer-1ykrhpj" data-framer-name="Main">
             <HeroHeader1 />
             <Attorneys2 />
+            <Memberships />
+            <WorkingWithUs />
           </main>
           <div className="framer-oocwze-container">
             <div></div>

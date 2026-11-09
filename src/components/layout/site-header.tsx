@@ -6,7 +6,7 @@ const links = [
   ["Home", "/"],
   ["About", "/about"],
   ["Practice Areas", "/practice-areas"],
-  ["Attorneys", "/attorneys"],
+  ["Our Team", "/attorneys"],
   ["Blog", "/blog"],
   ["Contact", "/contact"],
 ];
@@ -36,8 +36,13 @@ export function SiteHeader({ transparent = false }: { transparent?: boolean }) {
       className={`site-header ${transparent && !scrolled && !open ? "is-transparent" : ""}`}
     >
       <div className="header-inner">
-        <Link href="/" className="wordmark" aria-label="Jurista home">
-          Jurista<span>®</span>
+        <Link href="/" className="wordmark" aria-label="Hirani Law Firm home">
+          <img
+            src="/assets/hirani-logo.png"
+            width="500"
+            height="146"
+            alt="Hirani Law Firm"
+          />
         </Link>
         <button
           className="menu-toggle"

@@ -1,0 +1,38 @@
+.hero {
+  width: 100%;
+  padding: clamp(150px, 14vw, 220px) clamp(20px, 5vw, 80px)
+    clamp(64px, 7vw, 110px);
+  background: #f9f5eb;
+  color: #373623;
+  text-align: center;
+}
+.hero h1 {
+  margin: 24px auto 28px;
+  max-width: 1250px;
+  color: inherit;
+  font:
+    300 clamp(42px, 5.2vw, 88px)/1.07 Fraunces,
+    Georgia,
+    serif;
+  letter-spacing: -0.05em;
+}
+.hero p {
+  margin: 0 auto;
+  max-width: 850px;
+  color: #656454;
+  font:
+    400 18px/1.55 "DM Sans",
+    sans-serif;
+}
+.hero p:first-child {
+  color: #88865a;
+  font-size: 14px;
+}
+@media (max-width: 809px) {
+  .hero {
+    padding-top: 130px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}

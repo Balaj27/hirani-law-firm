@@ -1,6 +1,13 @@
+import Link from "next/link";
+import practices from "@/content/practice-areas.json";
+import type { PracticeDetail } from "@/content/practice-details";
 import { PhoneStyle12 } from "@/components/shared/PhoneStyle12";
 import { PhoneStyle13 } from "@/components/shared/PhoneStyle13";
-export function SinglePracticeArea2() {
+export function SinglePracticeArea2({
+  practice,
+}: {
+  practice: PracticeDetail;
+}) {
   return (
     <section
       className="framer-1kei910"
@@ -32,284 +39,19 @@ export function SinglePracticeArea2() {
                 {"Practice Areas"}
               </h6>
             </div>
-            <div className="framer-h8g7wv" data-framer-name="Links">
-              <div className="ssr-variant">
-                <div
-                  className="framer-1c2n26y-container"
-                  data-framer-name="Home"
-                  name="Home"
-                >
-                  <div
-                    name="Home"
-                    className="framer-sJpcs framer-hw0mP framer-vRgOx framer-56qlM framer-7DqP8 framer-W0FjX framer-ptsdo8 framer-v-1x3tx85"
-                    data-framer-name="Dark"
-                    data-highlight="true"
-                    tabIndex={0}
-                    style={{ opacity: "1" }}
+            <nav aria-label="Practice areas" className="hirani-service-nav">
+              {practices
+                .filter((p) => p.parent || p.group === practice.group)
+                .map((p) => (
+                  <Link
+                    key={p.href}
+                    href={p.href}
+                    aria-current={p.href === practice.href ? "page" : undefined}
                   >
-                    <div
-                      className="framer-1btq0l"
-                      data-framer-component-type="RichTextContainer"
-                      style={{
-                        "--framer-paragraph-spacing": "0px",
-                        "--extracted-r6o4lv":
-                          "var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41))",
-                        transform: "none",
-                        opacity: "1",
-                      }}
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1rkvlt6"
-                        data-styles-preset="O2RbGSX4W"
-                        dir="auto"
-                        style={{
-                          "--framer-text-color":
-                            "var(--extracted-r6o4lv, var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41)))",
-                        }}
-                      >
-                        <a
-                          className="framer-text framer-styles-preset-jhfkmb"
-                          data-styles-preset="VJ4iRHEqO"
-                          href="/practice-areas/corporate-law"
-                        >
-                          {"Corporate Law"}
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ssr-variant">
-                <div
-                  className="framer-17co6pk-container"
-                  data-framer-name="Home"
-                  name="Home"
-                >
-                  <div
-                    name="Home"
-                    className="framer-sJpcs framer-hw0mP framer-vRgOx framer-56qlM framer-7DqP8 framer-W0FjX framer-ptsdo8 framer-v-1x3tx85"
-                    data-framer-name="Dark"
-                    data-highlight="true"
-                    tabIndex={0}
-                    style={{ opacity: "1" }}
-                  >
-                    <div
-                      className="framer-1btq0l"
-                      data-framer-component-type="RichTextContainer"
-                      style={{
-                        "--framer-paragraph-spacing": "0px",
-                        "--extracted-r6o4lv":
-                          "var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41))",
-                        transform: "none",
-                        opacity: "1",
-                      }}
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1rkvlt6"
-                        data-styles-preset="O2RbGSX4W"
-                        dir="auto"
-                        style={{
-                          "--framer-text-color":
-                            "var(--extracted-r6o4lv, var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41)))",
-                        }}
-                      >
-                        <a
-                          className="framer-text framer-styles-preset-jhfkmb"
-                          data-styles-preset="VJ4iRHEqO"
-                          href="https://jurista-tambe.framer.website/practice-areas/immigration-law"
-                        >
-                          {"Immigration Law"}
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ssr-variant">
-                <div
-                  className="framer-1vbzkey-container"
-                  data-framer-name="Home"
-                  name="Home"
-                >
-                  <div
-                    name="Home"
-                    className="framer-sJpcs framer-hw0mP framer-vRgOx framer-56qlM framer-7DqP8 framer-W0FjX framer-ptsdo8 framer-v-1x3tx85"
-                    data-framer-name="Dark"
-                    data-highlight="true"
-                    tabIndex={0}
-                    style={{ opacity: "1" }}
-                  >
-                    <div
-                      className="framer-1btq0l"
-                      data-framer-component-type="RichTextContainer"
-                      style={{
-                        "--framer-paragraph-spacing": "0px",
-                        "--extracted-r6o4lv":
-                          "var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41))",
-                        transform: "none",
-                        opacity: "1",
-                      }}
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1rkvlt6"
-                        data-styles-preset="O2RbGSX4W"
-                        dir="auto"
-                        style={{
-                          "--framer-text-color":
-                            "var(--extracted-r6o4lv, var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41)))",
-                        }}
-                      >
-                        <a
-                          className="framer-text framer-styles-preset-jhfkmb"
-                          data-styles-preset="VJ4iRHEqO"
-                          href="https://jurista-tambe.framer.website/practice-areas/real-estate-law"
-                        >
-                          {"Real Estate Law"}
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ssr-variant">
-                <div
-                  className="framer-1orgmwz-container"
-                  data-framer-name="Home"
-                  name="Home"
-                >
-                  <div
-                    name="Home"
-                    className="framer-sJpcs framer-hw0mP framer-vRgOx framer-56qlM framer-7DqP8 framer-W0FjX framer-ptsdo8 framer-v-1x3tx85"
-                    data-framer-name="Dark"
-                    data-highlight="true"
-                    tabIndex={0}
-                    style={{ opacity: "1" }}
-                  >
-                    <div
-                      className="framer-1btq0l"
-                      data-framer-component-type="RichTextContainer"
-                      style={{
-                        "--framer-paragraph-spacing": "0px",
-                        "--extracted-r6o4lv":
-                          "var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41))",
-                        transform: "none",
-                        opacity: "1",
-                      }}
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1rkvlt6"
-                        data-styles-preset="O2RbGSX4W"
-                        dir="auto"
-                        style={{
-                          "--framer-text-color":
-                            "var(--extracted-r6o4lv, var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41)))",
-                        }}
-                      >
-                        <a
-                          className="framer-text framer-styles-preset-jhfkmb"
-                          data-styles-preset="VJ4iRHEqO"
-                          href="https://jurista-tambe.framer.website/practice-areas/criminal-law"
-                        >
-                          {"Criminal Law"}
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ssr-variant">
-                <div
-                  className="framer-11o5c6l-container"
-                  data-framer-name="Home"
-                  name="Home"
-                >
-                  <div
-                    name="Home"
-                    className="framer-sJpcs framer-hw0mP framer-vRgOx framer-56qlM framer-7DqP8 framer-W0FjX framer-ptsdo8 framer-v-1x3tx85"
-                    data-framer-name="Dark"
-                    data-highlight="true"
-                    tabIndex={0}
-                    style={{ opacity: "1" }}
-                  >
-                    <div
-                      className="framer-1btq0l"
-                      data-framer-component-type="RichTextContainer"
-                      style={{
-                        "--framer-paragraph-spacing": "0px",
-                        "--extracted-r6o4lv":
-                          "var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41))",
-                        transform: "none",
-                        opacity: "1",
-                      }}
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1rkvlt6"
-                        data-styles-preset="O2RbGSX4W"
-                        dir="auto"
-                        style={{
-                          "--framer-text-color":
-                            "var(--extracted-r6o4lv, var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41)))",
-                        }}
-                      >
-                        <a
-                          className="framer-text framer-styles-preset-jhfkmb"
-                          data-styles-preset="VJ4iRHEqO"
-                          href="https://jurista-tambe.framer.website/practice-areas/medical-law"
-                        >
-                          {"Medical Law"}
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="ssr-variant">
-                <div
-                  className="framer-lnwa06-container"
-                  data-framer-name="Home"
-                  name="Home"
-                >
-                  <div
-                    name="Home"
-                    className="framer-sJpcs framer-hw0mP framer-vRgOx framer-56qlM framer-7DqP8 framer-W0FjX framer-ptsdo8 framer-v-1x3tx85"
-                    data-framer-name="Dark"
-                    data-highlight="true"
-                    tabIndex={0}
-                    style={{ opacity: "1" }}
-                  >
-                    <div
-                      className="framer-1btq0l"
-                      data-framer-component-type="RichTextContainer"
-                      style={{
-                        "--framer-paragraph-spacing": "0px",
-                        "--extracted-r6o4lv":
-                          "var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41))",
-                        transform: "none",
-                        opacity: "1",
-                      }}
-                    >
-                      <p
-                        className="framer-text framer-styles-preset-1rkvlt6"
-                        data-styles-preset="O2RbGSX4W"
-                        dir="auto"
-                        style={{
-                          "--framer-text-color":
-                            "var(--extracted-r6o4lv, var(--token-bdea36de-cbdf-4a10-83f7-2aa0fbb32f7f, rgb(40, 44, 41)))",
-                        }}
-                      >
-                        <a
-                          className="framer-text framer-styles-preset-jhfkmb"
-                          data-styles-preset="VJ4iRHEqO"
-                          href="https://jurista-tambe.framer.website/practice-areas/family-law"
-                        >
-                          {"Family Law"}
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    {p.title}
+                  </Link>
+                ))}
+            </nav>
           </div>
           <div className="framer-oybe93" data-framer-name="Founder">
             <div className="framer-1kap2nt" data-framer-name="Image">
@@ -325,15 +67,15 @@ export function SinglePracticeArea2() {
                     }}
                   >
                     <img
-                      src="/assets/b66d6cfd729b13a7.webp"
-                      alt="Image of a man with two legs"
+                      src="/assets/hirani-sehar-standing.webp"
+                      alt="Sehar Hirani, Managing Attorney"
                       style={{
                         position: "absolute",
                         top: "0%",
                         left: "0",
                         height: "105%",
                         width: "100%",
-                        objectFit: "cover",
+                        objectFit: "contain",
                         borderRadius: "0",
                       }}
                     />
@@ -371,7 +113,7 @@ export function SinglePracticeArea2() {
                       "var(--token-cd15796e-8a71-42f1-a3c9-24d9b8e85655, rgb(55, 54, 35))",
                   }}
                 >
-                  {"William Ashford Sr"}
+                  {"Sehar Hirani"}
                 </p>
               </div>
               <div className="framer-2s514y" data-framer-name="pngegg 1">
@@ -393,8 +135,8 @@ export function SinglePracticeArea2() {
                     width="688"
                     height="268"
                     sizes="(min-width: 1280px) 171px, (min-width: 810px) and (max-width: 1279.98px) 171px, (max-width: 809.98px) 171px"
-                    srcSet="/assets/10298ac08d3429d9.png 512w,/assets/1de505d2eb198bdc.png 688w"
-                    src="/assets/1de505d2eb198bdc.png"
+                    srcSet="/assets/hirani-logo.png 500w"
+                    src="/assets/hirani-logo.png"
                     alt=""
                     style={{
                       display: "block",
@@ -403,7 +145,7 @@ export function SinglePracticeArea2() {
                       borderRadius: "inherit",
                       cornerShape: "inherit",
                       objectPosition: "center",
-                      objectFit: "fill",
+                      objectFit: "contain",
                     }}
                   />
                 </div>
@@ -424,6 +166,20 @@ export function SinglePracticeArea2() {
           </div>
         </div>
         <div className="framer-fclg7h" data-framer-name="Content">
+          {practice.parent && (
+            <nav
+              aria-label={practice.title + " services"}
+              className="hirani-subservices"
+            >
+              {practices
+                .filter((p) => p.group === practice.group && !p.parent)
+                .map((p) => (
+                  <Link key={p.href} href={p.href}>
+                    {p.title} ↗
+                  </Link>
+                ))}
+            </nav>
+          )}
           <div className="framer-18atws3" data-framer-name="Overview">
             <div
               className="framer-cumct"
@@ -434,9 +190,7 @@ export function SinglePracticeArea2() {
                 dir="auto"
                 className="framer-text framer-styles-preset-1bfelee"
               >
-                {
-                  "Our corporate law practice supports companies, founders, executives, and investors with legal guidance tailored to the realities of modern business. From formation and governance to transactions, compliance, and dispute prevention, we provide counsel designed to protect your interests and support long term success."
-                }
+                {practice.overview}
               </h6>
             </div>
             <div className="framer-8525zy" data-framer-name="Image">
@@ -444,7 +198,7 @@ export function SinglePracticeArea2() {
                 <div
                   className="framer-9e9ge2"
                   data-framer-name="Image"
-                  style={{ opacity: "1", transform: "scale(1.2)" }}
+                  style={{ opacity: "1", transform: "none" }}
                 >
                   <div
                     style={{
@@ -463,9 +217,9 @@ export function SinglePracticeArea2() {
                       width="1920"
                       height="1280"
                       sizes="(min-width: 1280px) max(max(max((min(100vw - 40px, 1440px) - 128px) / 3, 1px), (min(100vw - 40px, 1440px) - 80px) / 2), 1px), (max-width: 809.98px) max(max(min(100vw - 40px, 1440px) - 40px, (min(100vw - 40px, 1440px) - 40px) / 2), 1px), (min-width: 810px) and (max-width: 1279.98px) max(max(max((min(100vw - 40px, 1440px) - 112px) / 3, 1px), (min(100vw - 40px, 1440px) - 64px) / 2), 1px)"
-                      srcSet="/assets/05fe96f834644b4b.webp 512w,/assets/820bd0422bc2641c.webp 1024w,/assets/33e4fc2ad81d5d5a.webp 1920w"
-                      src="/assets/33e4fc2ad81d5d5a.webp"
-                      alt="M&A Advisory"
+                      
+                      src="/assets/hirani-consultation.webp"
+                      alt="Sehar Hirani and Noraly Martinez reviewing documents"
                       style={{
                         display: "block",
                         width: "100%",
@@ -473,7 +227,7 @@ export function SinglePracticeArea2() {
                         borderRadius: "inherit",
                         cornerShape: "inherit",
                         objectPosition: "center",
-                        objectFit: "cover",
+                        objectFit: "contain",
                       }}
                     />
                   </div>
@@ -595,7 +349,7 @@ export function SinglePracticeArea2() {
                         data-styles-preset="CezYzMcjf"
                         dir="auto"
                       >
-                        {"Strategic business minded advice"}
+                        {practice.capabilities[0]}
                       </p>
                     </div>
                   </div>
@@ -674,7 +428,7 @@ export function SinglePracticeArea2() {
                         data-styles-preset="CezYzMcjf"
                         dir="auto"
                       >
-                        {"Clear and practical legal guidance"}
+                        {practice.capabilities[1]}
                       </p>
                     </div>
                   </div>
@@ -754,7 +508,7 @@ export function SinglePracticeArea2() {
                         data-styles-preset="CezYzMcjf"
                         dir="auto"
                       >
-                        {"Strong contract and negotiation support"}
+                        {practice.capabilities[2]}
                       </p>
                     </div>
                   </div>
@@ -834,7 +588,7 @@ export function SinglePracticeArea2() {
                         data-styles-preset="CezYzMcjf"
                         dir="auto"
                       >
-                        {"Responsive counsel for complex matters"}
+                        {practice.capabilities[3]}
                       </p>
                     </div>
                   </div>
@@ -914,7 +668,7 @@ export function SinglePracticeArea2() {
                         data-styles-preset="CezYzMcjf"
                         dir="auto"
                       >
-                        {"Trusted protection for business interests"}
+                        {practice.capabilities[4]}
                       </p>
                     </div>
                   </div>
@@ -1005,7 +759,7 @@ export function SinglePracticeArea2() {
                   className="framer-text framer-styles-preset-14sivo6"
                 >
                   <p className="framer-text framer-styles-preset-14sivo6">
-                    {"Understand your business, structure, and objectives"}
+                    {practice.approach[0]}
                   </p>
                 </li>
                 <li
@@ -1013,7 +767,7 @@ export function SinglePracticeArea2() {
                   className="framer-text framer-styles-preset-14sivo6"
                 >
                   <p className="framer-text framer-styles-preset-14sivo6">
-                    {"Review legal risks, obligations, and opportunities"}
+                    {practice.approach[1]}
                   </p>
                 </li>
                 <li
@@ -1021,7 +775,7 @@ export function SinglePracticeArea2() {
                   className="framer-text framer-styles-preset-14sivo6"
                 >
                   <p className="framer-text framer-styles-preset-14sivo6">
-                    {"Develop a clear strategy aligned with your goals"}
+                    {practice.approach[2]}
                   </p>
                 </li>
                 <li
@@ -1029,7 +783,7 @@ export function SinglePracticeArea2() {
                   className="framer-text framer-styles-preset-14sivo6"
                 >
                   <p className="framer-text framer-styles-preset-14sivo6">
-                    {"Execute with precision and ongoing legal support"}
+                    {practice.approach[3]}
                   </p>
                 </li>
               </ol>

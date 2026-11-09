@@ -16,7 +16,7 @@
   },
   {
     "id": "practice-detail",
-    "route": "/practice-areas/corporate-law",
+    "route": "/practice-areas/[slug]",
     "sections": 2
   },
   {

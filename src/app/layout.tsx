@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
   title: {
-    default: "Jurista — Trusted Legal Counsel",
-    template: "%s | Jurista",
+    default: "Hirani Law Firm | Houston & Katy Family Law Attorney",
+    template: "%s | Hirani Law Firm",
   },
   description:
-    "Experienced legal counsel for individuals and businesses. Discover our practice areas, meet our attorneys, and schedule a consultation.",
+    "Attorney Sehar Hirani helps Greater Houston families with divorce, custody, support, and adoption, and represents personal injury clients throughout Texas. Free confidential consultation.",
 };
 export default function RootLayout({
   children,
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <a className="skip-link" href="#main-content">
           Skip to content

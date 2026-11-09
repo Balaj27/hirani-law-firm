@@ -33,7 +33,7 @@ export function FaqSection({
           <details
             className={styles.item}
             key={item.question}
-            name="jurista-faq"
+            name="hirani-faq"
             open={index === 0}
           >
             <summary

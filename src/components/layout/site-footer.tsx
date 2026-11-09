@@ -3,48 +3,32 @@ import { ContactForm } from "@/components/ui/contact-form";
 import styles from "./site-footer.module.css";
 const groups = [
   {
-    title: "About",
+    title: "Our Firm",
     links: [
-      ["Our Firm", "/about"],
-      ["Our Attorneys", "/attorneys"],
-      ["Case Studies", "https://jurista-tambe.framer.website/case-studies"],
+      ["About Hirani", "/about"],
+      ["Meet Our Team", "/attorneys"],
+      ["Client Reviews", "/about#google-reviews"],
       ["Contact Us", "/contact"],
-      ["Careers", "/about#careers"],
     ],
   },
   {
     title: "Practice Areas",
     links: [
-      ["Corporate Law", "/practice-areas/corporate-law"],
-      [
-        "Immigration Law",
-        "https://jurista-tambe.framer.website/practice-areas/immigration-law",
-      ],
-      [
-        "Real Estate Law",
-        "https://jurista-tambe.framer.website/practice-areas/real-estate-law",
-      ],
-      [
-        "Criminal Law",
-        "https://jurista-tambe.framer.website/practice-areas/criminal-law",
-      ],
-      [
-        "Medical Law",
-        "https://jurista-tambe.framer.website/practice-areas/medical-law",
-      ],
-      [
-        "Family Law",
-        "https://jurista-tambe.framer.website/practice-areas/family-law",
-      ],
+      ["Family Law", "/practice-areas/family-law"],
+      ["Divorce", "/practice-areas/divorce"],
+      ["Child Custody", "/practice-areas/child-custody"],
+      ["Adoption", "/practice-areas/adoption"],
+      ["Personal Injury", "/practice-areas/personal-injury"],
+      ["Auto Accidents", "/practice-areas/auto-accidents"],
     ],
   },
   {
     title: "Resources",
     links: [
-      ["Our Blog", "/blog"],
+      ["Legal Insights", "/blog"],
       ["Help & FAQs", "/contact#faqs"],
-      ["Terms of Service", "https://jurista-tambe.framer.website/legal/terms"],
-      ["Privacy Policy", "https://jurista-tambe.framer.website/legal/privacy"],
+      ["Custody Calendars", "/#resources"],
+      ["Privacy Policy", "https://www.hiranilawfirm.com/privacy-policy"],
     ],
   },
 ];
@@ -111,14 +95,17 @@ export function SiteFooter() {
           </ContactForm>
           <p>Your information is kept confidential</p>
           <div className={styles.socials} aria-label="Social media">
-            <a href="https://linkedin.com" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/sehar-hirani-3581b687"
+              aria-label="LinkedIn"
+            >
               <SocialIcon type="linkedin" />
             </a>
-            <a href="https://instagram.com" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/hiranilawfirm/"
+              aria-label="Instagram"
+            >
               <SocialIcon type="instagram" />
-            </a>
-            <a href="https://x.com" aria-label="X">
-              <SocialIcon type="x" />
             </a>
           </div>
         </div>
@@ -136,19 +123,16 @@ export function SiteFooter() {
             </div>
           ))}
         </nav>
-        <div className={styles.wordmark} aria-label="Jurista Law">
-          Jurista Law
+        <div className={styles.wordmark} aria-label="Hirani Law Firm">
+          Hirani Law
         </div>
         <div className={styles.copyright}>
           <p>
-            © 2026 All rights reserved. By{" "}
-            <a
-              href="https://framer.link/tambe-design"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Tambe
-            </a>
+            © 2026 Hirani Law Firm, PLLC. Licensed to practice law in Texas.
+          </p>
+          <p>
+            This website provides general information and does not create an
+            attorney-client relationship.
           </p>
         </div>
       </div>

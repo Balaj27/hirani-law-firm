@@ -1,3 +1,12 @@
+export const metadata = {
+  title: "About",
+  description:
+    "A client-first law firm founded by Attorney Sehar Hirani in 2018. Serving families across Greater Houston and personal injury clients throughout Texas.",
+};
+import {
+  FounderSection,
+  WorkingWithUs,
+} from "@/components/shared/hirani-sections";
 import "./about.css";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -5,7 +14,6 @@ import { HeroHeader1 } from "@/components/pages/about/HeroHeader1";
 import { FounderText2 } from "@/components/pages/about/FounderText2";
 import { Video3 } from "@/components/pages/about/Video3";
 import { Features4 } from "@/components/pages/about/Features4";
-import { Careers5 } from "@/components/pages/about/Careers5";
 import { Testimonials6 } from "@/components/pages/about/Testimonials6";
 
 export default function Page() {
@@ -25,9 +33,10 @@ export default function Page() {
           <main className="framer-12hox6l" data-framer-name="Main">
             <HeroHeader1 />
             <FounderText2 />
+            <FounderSection />
             <Video3 />
             <Features4 />
-            <Careers5 />
+            <WorkingWithUs />
             <Testimonials6 />
           </main>
           <div className="framer-22wfif-container">

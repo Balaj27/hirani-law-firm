@@ -28,21 +28,21 @@ export function FounderIntro() {
       <div className={styles.profile}>
         <div className={styles.identity}>
           <div>
-            <p className={styles.name}>William Ashford Sr</p>
-            <p className={styles.role}>The founder</p>
+            <p className={styles.name}>Sehar Hirani</p>
+            <p className={styles.role}>Founder & Attorney</p>
           </div>
           <img
             className={styles.signature}
-            src="/assets/1de505d2eb198bdc.png"
-            alt="William Ashford Sr’s signature"
-            width="688"
-            height="268"
+            src="/assets/hirani-logo.png"
+            alt="Hirani Law Firm"
+            width="500"
+            height="146"
           />
         </div>
         <img
           className={styles.portrait}
-          src="/assets/b66d6cfd729b13a7.webp"
-          alt="William Ashford Sr, founder of Jurista"
+          src="/assets/hirani-sehar-standing.webp"
+          alt="Sehar Hirani, Managing Attorney"
           width="800"
           height="1000"
           loading="lazy"
@@ -50,23 +50,22 @@ export function FounderIntro() {
       </div>
       <div className={styles.content}>
         <h2 className={styles.headline}>
-          Values that matter deeply to us including integrity, commitment where
-          the clients feel respected and confident in the counsel.
+          A mother, advocate, and steady guide for families in transition.
         </h2>
         <div className={styles.divider} />
         <div className={styles.quote}>
           <div className={styles.quoteText}>
             <p className={styles.lead}>
-              I founded this firm because I believed clients deserved a
-              different kind of legal experience, one grounded not only in skill
-              and strategy, but also in empathy, trust, and true personal
-              commitment. Too often, legal matters can leave people feeling
-              uncertain or unheard.
+              As a mom of two, Attorney Sehar Hirani understands how deeply
+              family legal matters can affect children, parents, and the future
+              of a household. She is passionate about protecting children,
+              supporting families, and defending fathers who want to remain
+              present and active in their children’s lives.
             </p>
             <p className={styles.body}>
-              To me, practicing law has always been about more than solving
-              problems. It is about helping all people to move forward with
-              clarity, confidence, and trusted support.
+              Sehar graduated from the University of Houston and South Texas
+              College of Law. She has been licensed in the State of Texas since
+              2018.
             </p>
           </div>
           <svg
@@ -79,13 +78,13 @@ export function FounderIntro() {
           </svg>
         </div>
         <div className={styles.contacts}>
-          <a href="mailto:W.Ashford@Jurista.com">
+          <a href="mailto:info@hiranilawfirm.com">
             <ContactIcon />
-            <span>w.ashford@jurista.com</span>
+            <span>info@hiranilawfirm.com</span>
           </a>
-          <a href="tel:+20116114574">
+          <a href="tel:+12816658188">
             <ContactIcon phone />
-            <span>+2 011 611-4574</span>
+            <span>281-665-8188</span>
           </a>
         </div>
       </div>

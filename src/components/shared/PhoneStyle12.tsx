@@ -3,7 +3,7 @@ export function PhoneStyle12() {
     <a
       className="framer-QqYug framer-hw0mP framer-1tjy341 framer-v-akihqf framer-1j4a1uc"
       data-framer-name="Phone - Style 1"
-      href="mailto:W.Ashford@Jurista.com"
+      href="mailto:info@hiranilawfirm.com"
       style={{ maxWidth: "100%", opacity: "1" }}
     >
       <div
@@ -51,7 +51,7 @@ export function PhoneStyle12() {
               "var(--extracted-r6o4lv, var(--variable-reference-AU7OAARtl-Jfbp_rFaZ))",
           }}
         >
-          {"W.Ashford@Jurista.com"}
+          {"info@hiranilawfirm.com"}
         </p>
       </div>
     </a>
