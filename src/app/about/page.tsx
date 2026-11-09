@@ -1,8 +1,10 @@
-export const metadata = {
-  title: "About",
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata({
+  title: "About Hirani Law Firm",
   description:
-    "A client-first law firm founded by Attorney Sehar Hirani in 2018. Serving families across Greater Houston and personal injury clients throughout Texas.",
-};
+    "Meet Hirani Law Firm, founded by Sehar Hirani in 2018. Personal family law guidance in Greater Houston and injury representation across Texas.",
+  path: "/about",
+});
 import {
   FounderSection,
   WorkingWithUs,

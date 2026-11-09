@@ -1,8 +1,10 @@
-export const metadata = {
-  title: "Practice Areas",
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata({
+  title: "Family Law & Personal Injury Services",
   description:
-    "Family law services across Greater Houston and personal injury representation throughout Texas. Explore divorce, custody, adoption, accidents, and more.",
-};
+    "Explore divorce, custody, support, adoption and personal injury services at Hirani Law Firm. Serving Greater Houston families and injury clients across Texas.",
+  path: "/practice-areas",
+});
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HeroHeader1 } from "@/components/pages/practice-areas/HeroHeader1";

@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { pageMetadata } from "@/lib/metadata";
 import { teamProfiles } from "@/content/team-profiles";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -14,10 +15,12 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const member = teamProfiles.find((member) => member.slug === slug);
-  return {
-    title: member ? member.name + " — " + member.role : "Team Profile",
-    description: member?.lead,
-  };
+  if (!member) notFound();
+  return pageMetadata({
+    title: `${member.name} — ${member.role}`,
+    description: `Meet ${member.name}, ${member.role} at Hirani Law Firm in Katy, Texas. ${member.slug === "sehar-hirani" ? "Family law and personal injury representation since 2018." : "Dedicated client support for family law and personal injury matters."}`,
+    path: `/attorneys/${member.slug}`,
+  });
 }
 export default async function Page({
   params,

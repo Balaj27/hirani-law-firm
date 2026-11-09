@@ -1,8 +1,10 @@
-export const metadata = {
-  title: "Legal Insights",
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata({
+  title: "Texas Legal Insights",
   description:
-    "Clear, practical answers on Texas divorce, child custody, property division, and car accident claims from Hirani Law Firm.",
-};
+    "Practical guidance on Texas divorce, child custody, property division and car accident claims from Hirani Law Firm, serving Houston, Katy and beyond.",
+  path: "/blog",
+});
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HeroHeader1 } from "@/components/pages/blog/HeroHeader1";

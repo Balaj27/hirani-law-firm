@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { pageMetadata } from "@/lib/metadata";
 import { practiceDetails } from "@/content/practice-details";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -15,10 +16,12 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const practice = practiceDetails.find((p) => p.slug === slug);
-  return {
-    title: practice ? practice.title : "Practice Area | Hirani Law Firm",
-    description: practice?.description,
-  };
+  if (!practice) notFound();
+  return pageMetadata({
+    title: `${practice.title} ${practice.group === "Family Law" ? "in Houston & Katy" : "in Texas"}`,
+    description: `${practice.title} ${practice.group === "Family Law" ? "in Houston and Katy" : "throughout Texas"}. Hirani Law Firm offers personal guidance and dedicated advocacy. Request a free consultation.`,
+    path: `/practice-areas/${practice.slug}`,
+  });
 }
 export default async function Page({
   params,

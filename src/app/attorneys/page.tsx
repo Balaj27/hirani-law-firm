@@ -1,8 +1,10 @@
-export const metadata = {
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata({
   title: "Meet Our Team",
   description:
-    "Meet the Hirani Law Firm team: Sehar Hirani, Carlos Peraza, Sami Hirani, Nicole Erazo, and Noraly Martinez. Dedicated support from your first call to resolution.",
-};
+    "Meet Sehar Hirani and the Hirani Law Firm team in Katy, TX. Dedicated legal and client support from your first call through your case resolution.",
+  path: "/attorneys",
+});
 import {
   Memberships,
   WorkingWithUs,

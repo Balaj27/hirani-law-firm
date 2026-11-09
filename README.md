@@ -37,6 +37,8 @@ Consultation and newsletter forms validate input and open an email draft to info
 
 ## Development notes
 
+SEO and sharing metadata live in src/lib/metadata.ts. Each page has its own description, canonical URL, Open Graph title/description, and Twitter card; all use public/images/hirani-social-preview.jpg (1200×630 JPEG). NEXT_PUBLIC_SITE_URL defaults to https://www.hiranilawfirm.com; set it to the public deployment origin before building a staging preview. See .env.example. Regenerate the branded image with `node scripts/generate-social-preview.mjs`. Social crawlers need the deployed page and image to be publicly accessible; local changes do not change the currently live website's link previews.
+
 Site-wide motion is managed by src/components/ui/site-motion.tsx. Headings and marked cards reveal on entry; data-scroll-image marks photo frames or portraits for reversible vertical parallax without scaling or changing image crops. The numeric attribute sets maximum travel in pixels, reduced to 40% on small screens. Only nearby images update, using one eased animation-frame loop that stops when settled. Route changes remove observers/listeners and bind the new page; reduced-motion preferences disable these effects. Existing pinned galleries, the horizontal practice stack, and footer zoom retain their own timelines.
 
 Generated Next.js output is in .next/. After changing the route structure, restart the dev server if its route map is stale. If hot reload enters a loop, stop the project dev process and regenerate its .next/dev cache; do not remove source files or run multiple dev servers against the same cache.

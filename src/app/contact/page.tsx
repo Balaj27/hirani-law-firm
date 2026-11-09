@@ -1,8 +1,10 @@
-export const metadata = {
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata({
   title: "Free Consultation",
   description:
-    "Schedule a free, confidential consultation with Hirani Law Firm. Call 281-665-8188 or visit our Katy office.",
-};
+    "Talk with Hirani Law Firm about divorce, custody or a personal injury claim. Call 281-665-8188 for a free, confidential consultation in Katy, TX.",
+  path: "/contact",
+});
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HeroHeader1 } from "@/components/pages/contact/HeroHeader1";

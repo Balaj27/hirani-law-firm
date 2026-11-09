@@ -1,13 +1,24 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SiteMotion } from "@/components/ui/site-motion";
+import {
+  homeTitle,
+  homeDescription,
+  pageMetadata,
+  siteUrl,
+} from "@/lib/metadata";
 export const metadata: Metadata = {
+  ...pageMetadata({
+    title: homeTitle,
+    description: homeDescription,
+    path: "/",
+  }),
+  metadataBase: siteUrl,
+  applicationName: "Hirani Law Firm",
   title: {
-    default: "Hirani Law Firm | Houston & Katy Family Law Attorney",
+    default: homeTitle,
     template: "%s | Hirani Law Firm",
   },
-  description:
-    "Attorney Sehar Hirani helps Greater Houston families with divorce, custody, support, and adoption, and represents personal injury clients throughout Texas. Free confidential consultation.",
 };
 export default function RootLayout({
   children,
