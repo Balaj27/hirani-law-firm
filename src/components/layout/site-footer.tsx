@@ -150,7 +150,6 @@ export function SiteFooter() {
               Tambe
             </a>
           </p>
-          <p>Made with Framer</p>
         </div>
       </div>
     </footer>
