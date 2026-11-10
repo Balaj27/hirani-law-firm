@@ -111,19 +111,22 @@
 .home {
   position: relative;
   isolation: isolate;
-  padding: clamp(146px, 13vw, 210px) clamp(24px, 3.2vw, 64px) 32px;
+  display: flex;
+  align-items: center;
+  padding: 156px clamp(24px, 5vw, 96px) 64px;
   min-height: 100svh;
 }
 .home .inner {
   display: block;
+  width: 100%;
   min-height: 0;
   max-width: 1800px;
 }
 .home .copy {
   position: relative;
   z-index: 1;
-  width: 50%;
-  max-width: 800px;
+  width: 43%;
+  max-width: 620px;
 }
 .home .media {
   position: absolute;
@@ -136,8 +139,13 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(8, 10, 6, 0.66), rgba(8, 10, 6, 0.18) 75%),
-    linear-gradient(0deg, rgba(8, 10, 6, 0.5), transparent 65%);
+    linear-gradient(
+      90deg,
+      rgba(8, 10, 6, 0.8),
+      rgba(8, 10, 6, 0.4) 42%,
+      transparent 72%
+    ),
+    linear-gradient(0deg, rgba(8, 10, 6, 0.24), transparent 65%);
 }
 .home .media img {
   width: 100%;
@@ -147,17 +155,68 @@
   object-position: center;
 }
 .home h1 {
-  font-size: clamp(48px, 7.1vw, 132px);
-  line-height: 1.04;
+  font-size: clamp(48px, 5vw, 86px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+.home .eyebrow {
+  margin-bottom: 24px;
+  color: #e1d7b7;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 .home .description {
-  max-width: 670px;
+  max-width: 440px;
   margin-top: 24px;
-  font-size: clamp(16px, 1.25vw, 21px);
-  line-height: 1.45;
+  font-size: clamp(16px, 1.1vw, 18px);
+  line-height: 1.65;
 }
-.home .buttons {
-  margin-top: 30px;
+.homeActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+  margin-top: 32px;
+}
+.consultButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 16px 24px;
+  background: #f9f5eb;
+  border: 1px solid #f9f5eb;
+  border-radius: 0;
+  color: #302f20;
+  text-decoration: none;
+  font:
+    500 14px/1.3 "DM Sans",
+    sans-serif;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.consultButton:hover {
+  background: #e5dbc3;
+  border-color: #e5dbc3;
+}
+.phoneLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #f9f5eb;
+  font:
+    400 14px/1.4 "DM Sans",
+    sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #f9f5eb66;
+  text-underline-offset: 5px;
+}
+.phoneLink:hover {
+  text-decoration-color: currentColor;
 }
 .homeLabel {
   margin: 16px 0 0;
@@ -238,11 +297,11 @@
   }
 }
 .home .note {
-  color: #e2e2dc;
-  margin-top: 32px;
-  padding-top: 20px;
-  border-top: 1px solid #ffffff40;
-  font-size: 14px;
+  color: #d0cabb;
+  margin-top: 24px;
+  padding: 0;
+  border: 0;
+  font-size: 12px;
 }
 @media (max-width: 809px) {
   .home {
@@ -262,10 +321,25 @@
     padding: max(380px, 52svh) 20px 32px;
   }
   .home h1 {
-    font-size: clamp(34px, 8.8vw, 48px);
+    font-size: clamp(38px, 10vw, 48px);
+    max-width: 420px;
+    text-wrap: initial;
+  }
+  .home .eyebrow {
+    margin-bottom: 16px;
+    font-size: 11px;
   }
   .home .description {
     font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  .homeActions {
+    margin-top: 24px;
+    gap: 12px 24px;
+  }
+  .consultButton {
+    padding: 14px 20px;
   }
   .home .media {
     position: absolute;
@@ -276,7 +350,14 @@
   }
   .home .media::after {
     display: block;
-    background: linear-gradient(180deg, #080a0633 0%, #080a0600 28%, #080a0673 43%, #080a06e6 66%, #080a06f5 100%);
+    background: linear-gradient(
+      180deg,
+      #080a0633 0%,
+      #080a0600 28%,
+      #080a0673 43%,
+      #080a06e6 66%,
+      #080a06f5 100%
+    );
   }
   .home .media picture {
     height: 100%;

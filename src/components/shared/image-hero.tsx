@@ -1,5 +1,5 @@
-import { ArrowIcon } from "@/components/ui/arrow-icon";
 import Link from "next/link";
+import { firm } from "@/content/firm";
 import styles from "./image-hero.module.css";
 
 type Props = {
@@ -29,29 +29,24 @@ export function ImageHero({
     >
       <div className={styles.inner}>
         <div className={styles.copy}>
-          {!home && <p className={styles.eyebrow}>{eyebrow}</p>}
+          <p className={styles.eyebrow}>{eyebrow}</p>
           <h1>{title}</h1>
           {description && <p className={styles.description}>{description}</p>}
           {home && (
             <>
-              <div className={styles.buttons}>
-                <Link href="/practice-areas">
-                  Practice areas{" "}
-                  <span aria-hidden="true">
-                    <ArrowIcon />
-                  </span>
+              <div className={styles.homeActions}>
+                <Link className={styles.consultButton} href="/contact">
+                  Free consultation
                 </Link>
-                <Link href="/about">
-                  Learn more{" "}
-                  <span aria-hidden="true">
-                    <ArrowIcon />
-                  </span>
-                </Link>
+                <a
+                  className={styles.phoneLink}
+                  href={firm.phoneHref}
+                  aria-label={`Call Hirani Law Firm at ${firm.phone}`}
+                >
+                  {firm.phone}
+                </a>
               </div>
-              <p className={styles.homeLabel}>{eyebrow}</p>
-              <p className={styles.note}>
-                Protecting Texas families since 2018.
-              </p>
+              <p className={styles.note}>Serving Texas families since 2018.</p>
             </>
           )}
         </div>

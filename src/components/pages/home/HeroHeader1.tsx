@@ -2,12 +2,12 @@ import { ImageHero } from "@/components/shared/image-hero";
 export function HeroHeader1() {
   return (
     <ImageHero
-      title="Facing a Family Challenge or Serious Injury?"
-      image="/assets/hirani-home-hero.webp"
-      mobileImage="/assets/hirani-home-hero-mobile.webp"
+      title="Your case is personal to us."
+      image="/assets/hirani-home-hero-hd.webp"
+      mobileImage="/assets/hirani-home-hero-mobile-hd.webp"
       alt="Attorney Sehar Hirani at Hirani Law Firm"
-      eyebrow="Houston and Katy Family Law Attorney"
-      description="Attorney Sehar Hirani helps Greater Houston clients navigate family law and personal injury claims with clear guidance and steady advocacy."
+      eyebrow="Family Law & Personal Injury"
+      description="Attorney Sehar Hirani guides Houston and Katy families through difficult transitions and represents injury clients across Texas."
       home
     />
   );
