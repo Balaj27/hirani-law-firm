@@ -246,26 +246,44 @@
 }
 @media (max-width: 809px) {
   .home {
-    padding: 138px 20px 32px;
+    padding: 0;
     min-height: 100svh;
   }
   .home .inner {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100svh;
+    gap: 0;
   }
   .home .copy {
     width: 100%;
-    max-width: 600px;
+    max-width: none;
+    padding: max(380px, 52svh) 20px 32px;
   }
   .home h1 {
-    font-size: clamp(42px, 10vw, 64px);
+    font-size: clamp(34px, 8.8vw, 48px);
   }
   .home .description {
     font-size: 16px;
   }
   .home .media {
     position: absolute;
+    grid-area: auto;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+  }
+  .home .media::after {
+    display: block;
+    background: linear-gradient(180deg, #080a0633 0%, #080a0600 28%, #080a0673 43%, #080a06e6 66%, #080a06f5 100%);
+  }
+  .home .media picture {
+    height: 100%;
   }
   .home .media img {
+    height: 100%;
+    object-fit: cover;
     object-position: center top;
   }
   .homeLabel {
